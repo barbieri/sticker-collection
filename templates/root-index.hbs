@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sticker Collection</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 2rem; }
+      .spec-list { display: grid; gap: 1rem; max-width: 640px; }
+      .spec-item { border: 1px solid #ddd; border-radius: 12px; padding: 1rem; text-decoration: none; color: inherit; }
+      .spec-item img { max-height: 48px; display: block; margin-bottom: .5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Sticker Collection</h1>
+    {{#if singleSpec}}
+    <script>
+      const locales = {{{localesJson}}};
+      const pickLocale = (arr) => {
+        for (const candidate of arr) {
+          const exact = locales.find((l) => l.toLowerCase() === candidate.toLowerCase());
+          if (exact) return exact;
+          const base = candidate.split('-')[0].toLowerCase();
+          const byBase = locales.find((l) => l.toLowerCase().startsWith(base));
+          if (byBase) return byBase;
+        }
+        return locales[0];
+      };
+      const selected = pickLocale(navigator.languages || [navigator.language || locales[0]]);
+      location.replace(`./{{singleSpec.id}}/${selected}/`);
+    </script>
+    {{else}}
+    <div class="spec-list">
+      {{#each specs}}
+      <a class="spec-item" href="./{{id}}/{{../defaultLocale}}/">
+        {{#if branding.logoUrl}}<img src="{{branding.logoUrl}}" alt="{{branding.title}}" />{{/if}}
+        <strong>{{branding.title}}</strong>
+        <div>{{id}}</div>
+      </a>
+      {{/each}}
+    </div>
+    {{/if}}
+  </body>
+</html>

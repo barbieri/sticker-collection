@@ -1,0 +1,5037 @@
+{
+  "$schema": "../schemas/specs.json",
+  "branding": {
+    "title": "FIFA World Cup 2026",
+    "shortName": "FWC26",
+    "logoUrl": "/fifa-wc2026/images/fifa-26.svg",
+    "colors": {
+      "background": "#fff",
+      "primary": "#000",
+      "secondary": "#666",
+      "error": "#d33",
+      "badge": "#d33",
+      "owned": "#ceface",
+      "missing": "#e9e9e9"
+    },
+    "decorationFont": {
+      "name": "FIFA 26",
+      "url": "/fifa-wc2026/fonts/fifa-26.otf"
+    },
+    "uxFont": {
+      "name": "Roboto",
+      "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    },
+    "printZoom": "100%"
+  },
+  "sections": [
+    {
+      "name": {
+        "pt-BR": "Página Inicial",
+        "en-US": "Front Page",
+        "es-ES": "Página Inicial"
+      },
+      "items": [
+        {
+          "id": "FWC",
+          "name": {
+            "pt-BR": "Página Inicial",
+            "en-US": "Front Page",
+            "es-ES": "Página Inicial"
+          },
+          "items": [
+            {
+              "id": "00",
+              "name": "00"
+            },
+            {
+              "id": "1",
+              "name": "1"
+            },
+            {
+              "id": "2",
+              "name": "2"
+            },
+            {
+              "id": "3",
+              "name": "3"
+            },
+            {
+              "id": "4",
+              "name": "4"
+            },
+            {
+              "id": "5",
+              "name": "5"
+            },
+            {
+              "id": "6",
+              "name": "6"
+            },
+            {
+              "id": "7",
+              "name": "7"
+            },
+            {
+              "id": "8",
+              "name": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo A",
+        "en-US": "Group A",
+        "es-ES": "Grupo A"
+      },
+      "color": "#62bd68",
+      "items": [
+        {
+          "id": "MEX",
+          "name": {
+            "pt-BR": "México",
+            "en-US": "Mexico",
+            "es-ES": "México"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Luis Malagón"
+            },
+            {
+              "id": "3",
+              "name": "Johan Vásquez"
+            },
+            {
+              "id": "4",
+              "name": "Jorge Sánchez"
+            },
+            {
+              "id": "5",
+              "name": "César Montes"
+            },
+            {
+              "id": "6",
+              "name": "Jesús Gallardo"
+            },
+            {
+              "id": "7",
+              "name": "Israel Reyes"
+            },
+            {
+              "id": "8",
+              "name": "Diego Lainez"
+            },
+            {
+              "id": "9",
+              "name": "Carlos Rodríguez"
+            },
+            {
+              "id": "10",
+              "name": "Edson Álvarez"
+            },
+            {
+              "id": "11",
+              "name": "Orbelín Pineda"
+            },
+            {
+              "id": "12",
+              "name": "Marcel Ruiz"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Érick Sánchez"
+            },
+            {
+              "id": "15",
+              "name": "Hirving Lozano"
+            },
+            {
+              "id": "16",
+              "name": "Santiago Giménez"
+            },
+            {
+              "id": "17",
+              "name": "Raúl Jiménez"
+            },
+            {
+              "id": "18",
+              "name": "Alexis Vega"
+            },
+            {
+              "id": "19",
+              "name": "Roberto Alvarado"
+            },
+            {
+              "id": "20",
+              "name": "César Huerta"
+            }
+          ]
+        },
+        {
+          "id": "RSA",
+          "name": {
+            "pt-BR": "África do Sul",
+            "en-US": "South Africa",
+            "es-ES": "Sudáfrica"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Ronwen Williams"
+            },
+            {
+              "id": "3",
+              "name": "Sipho Chaine"
+            },
+            {
+              "id": "4",
+              "name": "Aubrey Modiba"
+            },
+            {
+              "id": "5",
+              "name": "Samukele Kabini"
+            },
+            {
+              "id": "6",
+              "name": "Mbekezeli Mbokazi"
+            },
+            {
+              "id": "7",
+              "name": "Khulumani Ndamane"
+            },
+            {
+              "id": "8",
+              "name": "Siyabonga Ngezana"
+            },
+            {
+              "id": "9",
+              "name": "Khuliso Mudau"
+            },
+            {
+              "id": "10",
+              "name": "Nkosinathi Sibisi"
+            },
+            {
+              "id": "11",
+              "name": "Teboho Mokoena"
+            },
+            {
+              "id": "12",
+              "name": "Thalente Mbatha"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Bathuisi Aubaas"
+            },
+            {
+              "id": "15",
+              "name": "Yaya Sithole"
+            },
+            {
+              "id": "16",
+              "name": "Sipho Mbule"
+            },
+            {
+              "id": "17",
+              "name": "Lyle Foster"
+            },
+            {
+              "id": "18",
+              "name": "Ioraam Rayners"
+            },
+            {
+              "id": "19",
+              "name": "Mohau Nkota"
+            },
+            {
+              "id": "20",
+              "name": "Oswin Appolis"
+            }
+          ]
+        },
+        {
+          "id": "KOR",
+          "name": {
+            "pt-BR": "Coreia do Sul",
+            "en-US": "South Korea",
+            "es-ES": "Corea del Sur"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Hyeon-woo Jo"
+            },
+            {
+              "id": "3",
+              "name": "Seung-Gyu Kim"
+            },
+            {
+              "id": "4",
+              "name": "Min-jae Kim"
+            },
+            {
+              "id": "5",
+              "name": "Yu-min Cho"
+            },
+            {
+              "id": "6",
+              "name": "Young-woo Seol"
+            },
+            {
+              "id": "7",
+              "name": "Han-beom Lee"
+            },
+            {
+              "id": "8",
+              "name": "Tae-seok Lee"
+            },
+            {
+              "id": "9",
+              "name": "Myung-jae Lee"
+            },
+            {
+              "id": "10",
+              "name": "Jae-sung Lee"
+            },
+            {
+              "id": "11",
+              "name": "In-beom Hwang"
+            },
+            {
+              "id": "12",
+              "name": "Kang-in Lee"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Seung-ho Paik"
+            },
+            {
+              "id": "15",
+              "name": "Jens Castrop"
+            },
+            {
+              "id": "16",
+              "name": "Dong-gyeong Lee"
+            },
+            {
+              "id": "17",
+              "name": "Gue-sung Cho"
+            },
+            {
+              "id": "18",
+              "name": "Heung-min Son"
+            },
+            {
+              "id": "19",
+              "name": "Hee-chan Hwang"
+            },
+            {
+              "id": "20",
+              "name": "Hyeon-Gyu Oh"
+            }
+          ]
+        },
+        {
+          "id": "CZE",
+          "name": {
+            "pt-BR": "República Tcheca",
+            "en-US": "Czech Republic",
+            "es-ES": "República Checa"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Matěj Kovář"
+            },
+            {
+              "id": "3",
+              "name": "Jindřich Staněk"
+            },
+            {
+              "id": "4",
+              "name": "Ladislav Krejčí"
+            },
+            {
+              "id": "5",
+              "name": "Vladimír Coufal"
+            },
+            {
+              "id": "6",
+              "name": "Jaroslav Zelený"
+            },
+            {
+              "id": "7",
+              "name": "Tomáš Holeš"
+            },
+            {
+              "id": "8",
+              "name": "David Zima"
+            },
+            {
+              "id": "9",
+              "name": "Michal Sadílek"
+            },
+            {
+              "id": "10",
+              "name": "Lukáš Provod"
+            },
+            {
+              "id": "11",
+              "name": "Lukáš Červ"
+            },
+            {
+              "id": "12",
+              "name": "Tomáš Souček"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Pavel Šulc"
+            },
+            {
+              "id": "15",
+              "name": "Matěj Vydra"
+            },
+            {
+              "id": "16",
+              "name": "Vasil Kušej"
+            },
+            {
+              "id": "17",
+              "name": "Tomáš Chorý"
+            },
+            {
+              "id": "18",
+              "name": "Václav Černý"
+            },
+            {
+              "id": "19",
+              "name": "Adam Hložek"
+            },
+            {
+              "id": "20",
+              "name": "Patrik Schick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo B",
+        "en-US": "Group B",
+        "es-ES": "Grupo B"
+      },
+      "color": "#db2827",
+      "items": [
+        {
+          "id": "CAN",
+          "name": {
+            "pt-BR": "Canadá",
+            "en-US": "Canada",
+            "es-ES": "Canadá"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Dayne St. Clair"
+            },
+            {
+              "id": "3",
+              "name": "Alphonso Davies"
+            },
+            {
+              "id": "4",
+              "name": "Alistair Johnston"
+            },
+            {
+              "id": "5",
+              "name": "Samuel Adekugbe"
+            },
+            {
+              "id": "6",
+              "name": "Richie Laryea"
+            },
+            {
+              "id": "7",
+              "name": "Derek Cornelius"
+            },
+            {
+              "id": "8",
+              "name": "Moïse Bombito"
+            },
+            {
+              "id": "9",
+              "name": "Kamal Miller"
+            },
+            {
+              "id": "10",
+              "name": "Stephen Eustáquio"
+            },
+            {
+              "id": "11",
+              "name": "Ismaël Koné"
+            },
+            {
+              "id": "12",
+              "name": "Jonathan Osorio"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Jacob Shaffelburg"
+            },
+            {
+              "id": "15",
+              "name": "Mathieu Choinière"
+            },
+            {
+              "id": "16",
+              "name": "Niko Sigur"
+            },
+            {
+              "id": "17",
+              "name": "Tajon Buchanan"
+            },
+            {
+              "id": "18",
+              "name": "Liam Millar"
+            },
+            {
+              "id": "19",
+              "name": "Cyle Larin"
+            },
+            {
+              "id": "20",
+              "name": "Jonathan David"
+            }
+          ]
+        },
+        {
+          "id": "BIH",
+          "name": {
+            "pt-BR": "Bósnia e Herzegovina",
+            "en-US": "Bosnia and Herzegovina",
+            "es-ES": "Bosnia y Herzegovina"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Nikola Vasilj"
+            },
+            {
+              "id": "3",
+              "name": "Amar Dedić"
+            },
+            {
+              "id": "4",
+              "name": "Sead Kolašinac"
+            },
+            {
+              "id": "5",
+              "name": "Tarik Muharemović"
+            },
+            {
+              "id": "6",
+              "name": "Nihad Mujakić"
+            },
+            {
+              "id": "7",
+              "name": "Nikola Katić"
+            },
+            {
+              "id": "8",
+              "name": "Amir Hadžiahmetović"
+            },
+            {
+              "id": "9",
+              "name": "Benjamin Tahirović"
+            },
+            {
+              "id": "10",
+              "name": "Armin Gigović"
+            },
+            {
+              "id": "11",
+              "name": "Ivan Šunjić"
+            },
+            {
+              "id": "12",
+              "name": "Ivan Bašić"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Dženis Burnić"
+            },
+            {
+              "id": "15",
+              "name": "Esmir Bajraktarević"
+            },
+            {
+              "id": "16",
+              "name": "Amar Memić"
+            },
+            {
+              "id": "17",
+              "name": "Ermedin Demirović"
+            },
+            {
+              "id": "18",
+              "name": "Edin Džeko"
+            },
+            {
+              "id": "19",
+              "name": "Samed Baždar"
+            },
+            {
+              "id": "20",
+              "name": "Haris Tabaković"
+            }
+          ]
+        },
+        {
+          "id": "QAT",
+          "name": {
+            "pt-BR": "Catar",
+            "en-US": "Qatar",
+            "es-ES": "Catar"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Meshaal Barsham"
+            },
+            {
+              "id": "3",
+              "name": "Sultan Albrake"
+            },
+            {
+              "id": "4",
+              "name": "Lucas Mendes"
+            },
+            {
+              "id": "5",
+              "name": "Homam Ahmed"
+            },
+            {
+              "id": "6",
+              "name": "Boualem Khoukhi"
+            },
+            {
+              "id": "7",
+              "name": "Pedro Miguel"
+            },
+            {
+              "id": "8",
+              "name": "Tarek Salman"
+            },
+            {
+              "id": "9",
+              "name": "Mohamed Al-Mannai"
+            },
+            {
+              "id": "10",
+              "name": "Karim Boudiaf"
+            },
+            {
+              "id": "11",
+              "name": "Assim Madibo"
+            },
+            {
+              "id": "12",
+              "name": "Ahmed Fatehi"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Mohammed Waad"
+            },
+            {
+              "id": "15",
+              "name": "Abdulaziz Hatem"
+            },
+            {
+              "id": "16",
+              "name": "Hassan Al-Haydos"
+            },
+            {
+              "id": "17",
+              "name": "Edmilson Junior"
+            },
+            {
+              "id": "18",
+              "name": "Akram Hassan Afif"
+            },
+            {
+              "id": "19",
+              "name": "Ahmed Al Ganehi"
+            },
+            {
+              "id": "20",
+              "name": "Almoez Ali"
+            }
+          ]
+        },
+        {
+          "id": "SUI",
+          "name": {
+            "pt-BR": "Suíça",
+            "en-US": "Switzerland",
+            "es-ES": "Suiza"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Gregor Kobel"
+            },
+            {
+              "id": "3",
+              "name": "Yvon Mvogo"
+            },
+            {
+              "id": "4",
+              "name": "Manuel Akanji"
+            },
+            {
+              "id": "5",
+              "name": "Ricardo Rodriguez"
+            },
+            {
+              "id": "6",
+              "name": "Nico Elvedi"
+            },
+            {
+              "id": "7",
+              "name": "Aurèle Amenda"
+            },
+            {
+              "id": "8",
+              "name": "Silvan Widmer"
+            },
+            {
+              "id": "9",
+              "name": "Granit Xhaka"
+            },
+            {
+              "id": "10",
+              "name": "Denis Zakaria"
+            },
+            {
+              "id": "11",
+              "name": "Remo Freuler"
+            },
+            {
+              "id": "12",
+              "name": "Fabian Rieder"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Ardon Jashari"
+            },
+            {
+              "id": "15",
+              "name": "Johan Manzambi"
+            },
+            {
+              "id": "16",
+              "name": "Michel Aebischer"
+            },
+            {
+              "id": "17",
+              "name": "Breel Embolo"
+            },
+            {
+              "id": "18",
+              "name": "Ruben Vargas"
+            },
+            {
+              "id": "19",
+              "name": "Dan Ndoye"
+            },
+            {
+              "id": "20",
+              "name": "Zeki Amdouni"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo C",
+        "en-US": "Group C",
+        "es-ES": "Grupo C"
+      },
+      "color": "#a9a648",
+      "items": [
+        {
+          "id": "BRA",
+          "name": {
+            "pt-BR": "Brasil",
+            "en-US": "Brazil",
+            "es-ES": "Brasil"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Alisson"
+            },
+            {
+              "id": "3",
+              "name": "Bento"
+            },
+            {
+              "id": "4",
+              "name": "Marquinhos"
+            },
+            {
+              "id": "5",
+              "name": "Éder Militão"
+            },
+            {
+              "id": "6",
+              "name": "Gabriel Magalhães"
+            },
+            {
+              "id": "7",
+              "name": "Danilo"
+            },
+            {
+              "id": "8",
+              "name": "Wesley"
+            },
+            {
+              "id": "9",
+              "name": "Lucas Paquetá"
+            },
+            {
+              "id": "10",
+              "name": "Casemiro"
+            },
+            {
+              "id": "11",
+              "name": "Bruno Guimarães"
+            },
+            {
+              "id": "12",
+              "name": "Luiz Henrique"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Vinícius Júnior"
+            },
+            {
+              "id": "15",
+              "name": "Rodrygo"
+            },
+            {
+              "id": "16",
+              "name": "João Pedro"
+            },
+            {
+              "id": "17",
+              "name": "Matheus Cunha"
+            },
+            {
+              "id": "18",
+              "name": "Gabriel Martinelli"
+            },
+            {
+              "id": "19",
+              "name": "Raphinha"
+            },
+            {
+              "id": "20",
+              "name": "Estêvão"
+            }
+          ]
+        },
+        {
+          "id": "MAR",
+          "name": {
+            "pt-BR": "Marrocos",
+            "en-US": "Morocco",
+            "es-ES": "Marruecos"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Yassine Bounou"
+            },
+            {
+              "id": "3",
+              "name": "Munir El Kajoui"
+            },
+            {
+              "id": "4",
+              "name": "Achraf Hakimi"
+            },
+            {
+              "id": "5",
+              "name": "Noussair Mazraoui"
+            },
+            {
+              "id": "6",
+              "name": "Nayef Aguerd"
+            },
+            {
+              "id": "7",
+              "name": "Romain Saïss"
+            },
+            {
+              "id": "8",
+              "name": "Jawad El Yamiq"
+            },
+            {
+              "id": "9",
+              "name": "Adam Masina"
+            },
+            {
+              "id": "10",
+              "name": "Sofyan Amrabat"
+            },
+            {
+              "id": "11",
+              "name": "Azzedine Ounahi"
+            },
+            {
+              "id": "12",
+              "name": "Eliesse Ben Seghir"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Bilal El Khannouss"
+            },
+            {
+              "id": "15",
+              "name": "Ismael Saibari"
+            },
+            {
+              "id": "16",
+              "name": "Youssef En-Nesyri"
+            },
+            {
+              "id": "17",
+              "name": "Abde Ezzalzouli"
+            },
+            {
+              "id": "18",
+              "name": "Soufiane Rahimi"
+            },
+            {
+              "id": "19",
+              "name": "Brahim Díaz"
+            },
+            {
+              "id": "20",
+              "name": "Ayoub El Kaabi"
+            }
+          ]
+        },
+        {
+          "id": "HAI",
+          "name": {
+            "pt-BR": "Haiti",
+            "en-US": "Haiti",
+            "es-ES": "Haití"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Johny Placide"
+            },
+            {
+              "id": "3",
+              "name": "Carlens Arcus"
+            },
+            {
+              "id": "4",
+              "name": "Martin Expérience"
+            },
+            {
+              "id": "5",
+              "name": "Jean-Kevin Duverne"
+            },
+            {
+              "id": "6",
+              "name": "Ricardo Adé"
+            },
+            {
+              "id": "7",
+              "name": "Duke Lacroix"
+            },
+            {
+              "id": "8",
+              "name": "Garven Metusala"
+            },
+            {
+              "id": "9",
+              "name": "Hannes Delcroix"
+            },
+            {
+              "id": "10",
+              "name": "Leverton Pierre"
+            },
+            {
+              "id": "11",
+              "name": "Danley Jean Jacques"
+            },
+            {
+              "id": "12",
+              "name": "Jean-Ricner Bellegarde"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Christopher Attys"
+            },
+            {
+              "id": "15",
+              "name": "Derrick Etienne Jr."
+            },
+            {
+              "id": "16",
+              "name": "Josué Casimir"
+            },
+            {
+              "id": "17",
+              "name": "Ruben Providence"
+            },
+            {
+              "id": "18",
+              "name": "Duckens Nazon"
+            },
+            {
+              "id": "19",
+              "name": "Louicius Deedson"
+            },
+            {
+              "id": "20",
+              "name": "Frantzdy Pierrot"
+            }
+          ]
+        },
+        {
+          "id": "SCO",
+          "name": {
+            "pt-BR": "Escócia",
+            "en-US": "Scotland",
+            "es-ES": "Escocia"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Angus Gunn"
+            },
+            {
+              "id": "3",
+              "name": "Jack Hendry"
+            },
+            {
+              "id": "4",
+              "name": "Kieran Tierney"
+            },
+            {
+              "id": "5",
+              "name": "Aaron Hickey"
+            },
+            {
+              "id": "6",
+              "name": "Andrew Robertson"
+            },
+            {
+              "id": "7",
+              "name": "Scott McKenna"
+            },
+            {
+              "id": "8",
+              "name": "John Souttar"
+            },
+            {
+              "id": "9",
+              "name": "Anthony Ralston"
+            },
+            {
+              "id": "10",
+              "name": "Grant Hanley"
+            },
+            {
+              "id": "11",
+              "name": "Scott McTominay"
+            },
+            {
+              "id": "12",
+              "name": "Billy GilmourLewis"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Ferguson"
+            },
+            {
+              "id": "15",
+              "name": "Ryan Christie"
+            },
+            {
+              "id": "16",
+              "name": "Kenny McLean"
+            },
+            {
+              "id": "17",
+              "name": "John McGinn"
+            },
+            {
+              "id": "18",
+              "name": "Lyndon Dykes"
+            },
+            {
+              "id": "19",
+              "name": "Che Adams"
+            },
+            {
+              "id": "20",
+              "name": "Ben Gannon-Doak"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo D",
+        "en-US": "Group D",
+        "es-ES": "Grupo D"
+      },
+      "color": "#484f97",
+      "items": [
+        {
+          "id": "USA",
+          "name": {
+            "pt-BR": "Estados Unidos",
+            "en-US": "United States",
+            "es-ES": "Estados Unidos"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Math Freese"
+            },
+            {
+              "id": "3",
+              "name": "Chris Richards"
+            },
+            {
+              "id": "4",
+              "name": "Tim Ream"
+            },
+            {
+              "id": "5",
+              "name": "Mark McKenzie"
+            },
+            {
+              "id": "6",
+              "name": "Alex Freeman"
+            },
+            {
+              "id": "7",
+              "name": "Antonee Robinson"
+            },
+            {
+              "id": "8",
+              "name": "Tyler Adams"
+            },
+            {
+              "id": "9",
+              "name": "Tanner Tessmann"
+            },
+            {
+              "id": "10",
+              "name": "Weston McKenny"
+            },
+            {
+              "id": "11",
+              "name": "Christian Roldan"
+            },
+            {
+              "id": "12",
+              "name": "Timothy Weah"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Diego Luna"
+            },
+            {
+              "id": "15",
+              "name": "Malim Tillman"
+            },
+            {
+              "id": "16",
+              "name": "Christian Pulisic"
+            },
+            {
+              "id": "17",
+              "name": "Brenden Aaronson"
+            },
+            {
+              "id": "18",
+              "name": "Ricardo Pepi"
+            },
+            {
+              "id": "19",
+              "name": "Haji Wright"
+            },
+            {
+              "id": "20",
+              "name": "Folarin Balogun"
+            }
+          ]
+        },
+        {
+          "id": "PAR",
+          "name": {
+            "pt-BR": "Paraguai",
+            "en-US": "Paraguay",
+            "es-ES": "Paraguay"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Roberto Fernández"
+            },
+            {
+              "id": "3",
+              "name": "Orlando Gill"
+            },
+            {
+              "id": "4",
+              "name": "Gustavo Gómez"
+            },
+            {
+              "id": "5",
+              "name": "Fabián Balbuena"
+            },
+            {
+              "id": "6",
+              "name": "Juan José Cáceres"
+            },
+            {
+              "id": "7",
+              "name": "Omar Alderete"
+            },
+            {
+              "id": "8",
+              "name": "Junior Alonso"
+            },
+            {
+              "id": "9",
+              "name": "Mathías Villasanti"
+            },
+            {
+              "id": "10",
+              "name": "Diego Gómez"
+            },
+            {
+              "id": "11",
+              "name": "Damián Bobadilla"
+            },
+            {
+              "id": "12",
+              "name": "Andrés Cubas"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Matías Galarza Fonda"
+            },
+            {
+              "id": "15",
+              "name": "Julio Enciso"
+            },
+            {
+              "id": "16",
+              "name": "Player 14"
+            },
+            {
+              "id": "17",
+              "name": "Player 15"
+            },
+            {
+              "id": "18",
+              "name": "Player 16"
+            },
+            {
+              "id": "19",
+              "name": "Player 17"
+            },
+            {
+              "id": "20",
+              "name": "Player 18"
+            }
+          ]
+        },
+        {
+          "id": "AUS",
+          "name": {
+            "pt-BR": "Austrália",
+            "en-US": "Australia",
+            "es-ES": "Australia"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Mathew Ryan"
+            },
+            {
+              "id": "3",
+              "name": "Joe Gauci"
+            },
+            {
+              "id": "4",
+              "name": "Harry Souttar"
+            },
+            {
+              "id": "5",
+              "name": "Alessandro Circati"
+            },
+            {
+              "id": "6",
+              "name": "Jordan Bos"
+            },
+            {
+              "id": "7",
+              "name": "Aziz Behich"
+            },
+            {
+              "id": "8",
+              "name": "Cameron Burgess"
+            },
+            {
+              "id": "9",
+              "name": "Lewis Miller"
+            },
+            {
+              "id": "10",
+              "name": "Milos Degenek"
+            },
+            {
+              "id": "11",
+              "name": "Jackson Irvine"
+            },
+            {
+              "id": "12",
+              "name": "Riley McGree"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Aiden O’Neill"
+            },
+            {
+              "id": "15",
+              "name": "Connor Metcalfe"
+            },
+            {
+              "id": "16",
+              "name": "Patrick Yazbek"
+            },
+            {
+              "id": "17",
+              "name": "Craig Goodwin"
+            },
+            {
+              "id": "18",
+              "name": "Kusini Yengi"
+            },
+            {
+              "id": "19",
+              "name": "Nestory Irankunda"
+            },
+            {
+              "id": "20",
+              "name": "Mohamed Touré"
+            }
+          ]
+        },
+        {
+          "id": "TUR",
+          "name": {
+            "pt-BR": "Turquia",
+            "en-US": "Turkey",
+            "es-ES": "Turquía"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Ugurcan Cakir"
+            },
+            {
+              "id": "3",
+              "name": "Mert Muldur"
+            },
+            {
+              "id": "4",
+              "name": "Zeki Celik"
+            },
+            {
+              "id": "5",
+              "name": "Abdulkerim Bardakci"
+            },
+            {
+              "id": "6",
+              "name": "Caglar Soyunku"
+            },
+            {
+              "id": "7",
+              "name": "Merih Demiral"
+            },
+            {
+              "id": "8",
+              "name": "Ferdi Kadioglu"
+            },
+            {
+              "id": "9",
+              "name": "Kaan Ayhan"
+            },
+            {
+              "id": "10",
+              "name": "Ismail Yuksek"
+            },
+            {
+              "id": "11",
+              "name": "Hakan Calhanoglu"
+            },
+            {
+              "id": "12",
+              "name": "Orkun Kokcu"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Arda Güler"
+            },
+            {
+              "id": "15",
+              "name": "Irfan Can Kahvecu"
+            },
+            {
+              "id": "16",
+              "name": "Yunus Akgun"
+            },
+            {
+              "id": "17",
+              "name": "Can Uzun"
+            },
+            {
+              "id": "18",
+              "name": "Baris Alper Yilmaz"
+            },
+            {
+              "id": "19",
+              "name": "Kerem Akturkoglu"
+            },
+            {
+              "id": "20",
+              "name": "Kenan Yildiz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo E",
+        "en-US": "Group E",
+        "es-ES": "Grupo E"
+      },
+      "color": "#f26028",
+      "items": [
+        {
+          "id": "GER",
+          "name": {
+            "pt-BR": "Alemanha",
+            "en-US": "Germany",
+            "es-ES": "Alemania"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Marc-André ter Stegen"
+            },
+            {
+              "id": "3",
+              "name": "Jonathan Tah"
+            },
+            {
+              "id": "4",
+              "name": "David Raum"
+            },
+            {
+              "id": "5",
+              "name": "Nico Schlotterbeck"
+            },
+            {
+              "id": "6",
+              "name": "Antonio Rüdiger"
+            },
+            {
+              "id": "7",
+              "name": "Waldemar Anton"
+            },
+            {
+              "id": "8",
+              "name": "Ridle Baku"
+            },
+            {
+              "id": "9",
+              "name": "Maximilian Mittelstädt"
+            },
+            {
+              "id": "10",
+              "name": "Joshua Kimmich"
+            },
+            {
+              "id": "11",
+              "name": "Florian Wirtz"
+            },
+            {
+              "id": "12",
+              "name": "Felix Nmecha"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Leon Goretzka"
+            },
+            {
+              "id": "15",
+              "name": "Jamal Musiala"
+            },
+            {
+              "id": "16",
+              "name": "Serge Gnabry"
+            },
+            {
+              "id": "17",
+              "name": "Kai Havertz"
+            },
+            {
+              "id": "18",
+              "name": "Leroy Sané"
+            },
+            {
+              "id": "19",
+              "name": "Karim Adeyemi"
+            },
+            {
+              "id": "20",
+              "name": "Nick Woltemade"
+            }
+          ]
+        },
+        {
+          "id": "CUW",
+          "name": {
+            "pt-BR": "Curaçao",
+            "en-US": "Curacao",
+            "es-ES": "Curazao"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Eloy Room"
+            },
+            {
+              "id": "3",
+              "name": "Armando Obispo"
+            },
+            {
+              "id": "4",
+              "name": "Sherel Floranus"
+            },
+            {
+              "id": "5",
+              "name": "Jurien Gaari"
+            },
+            {
+              "id": "6",
+              "name": "Joshua Brenet"
+            },
+            {
+              "id": "7",
+              "name": "Roshon Van Eijma"
+            },
+            {
+              "id": "8",
+              "name": "Shurandy Sambo"
+            },
+            {
+              "id": "9",
+              "name": "Livano Comenencia"
+            },
+            {
+              "id": "10",
+              "name": "Godfried Roemeratoe"
+            },
+            {
+              "id": "11",
+              "name": "Juninho Bacuna"
+            },
+            {
+              "id": "12",
+              "name": "Leandro Bacuna"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Tahith Chong"
+            },
+            {
+              "id": "15",
+              "name": "Kenji Gorré"
+            },
+            {
+              "id": "16",
+              "name": "Jearl Margaritha"
+            },
+            {
+              "id": "17",
+              "name": "Jurgen Locadia"
+            },
+            {
+              "id": "18",
+              "name": "Jeremy Antonisse"
+            },
+            {
+              "id": "19",
+              "name": "Gervane Kastaneer"
+            },
+            {
+              "id": "20",
+              "name": "Sontje Hansen"
+            }
+          ]
+        },
+        {
+          "id": "CIV",
+          "name": {
+            "pt-BR": "Costa do Marfim",
+            "en-US": "Ivory Coast",
+            "es-ES": "Costa de Marfil"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Yahia Fofana"
+            },
+            {
+              "id": "3",
+              "name": "Ghislain Konan"
+            },
+            {
+              "id": "4",
+              "name": "Wilfried Singo"
+            },
+            {
+              "id": "5",
+              "name": "Odilon Kossounou"
+            },
+            {
+              "id": "6",
+              "name": "Evan Ndicka"
+            },
+            {
+              "id": "7",
+              "name": "Willy Boly"
+            },
+            {
+              "id": "8",
+              "name": "Emmanuel Agbadou"
+            },
+            {
+              "id": "9",
+              "name": "Ousmane Diomande"
+            },
+            {
+              "id": "10",
+              "name": "Franck Kessié"
+            },
+            {
+              "id": "11",
+              "name": "Seko Fofana"
+            },
+            {
+              "id": "12",
+              "name": "Ibrahim Sangaré"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Jean-Philippe Gbamin"
+            },
+            {
+              "id": "15",
+              "name": "Amad Diallo"
+            },
+            {
+              "id": "16",
+              "name": "Sébastien Haller"
+            },
+            {
+              "id": "17",
+              "name": "Simon Adingra"
+            },
+            {
+              "id": "18",
+              "name": "Yan Diomande"
+            },
+            {
+              "id": "19",
+              "name": "Evann Guessand"
+            },
+            {
+              "id": "20",
+              "name": "Oumar Diakité"
+            }
+          ]
+        },
+        {
+          "id": "ECU",
+          "name": {
+            "pt-BR": "Equador",
+            "en-US": "Ecuador",
+            "es-ES": "Ecuador"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Hernán Galíndez"
+            },
+            {
+              "id": "3",
+              "name": "Gonzalo Valle"
+            },
+            {
+              "id": "4",
+              "name": "Piero Hincapié"
+            },
+            {
+              "id": "5",
+              "name": "Pervis Estupiñán"
+            },
+            {
+              "id": "6",
+              "name": "Willian Pacho"
+            },
+            {
+              "id": "7",
+              "name": "Ángelo Preciado"
+            },
+            {
+              "id": "8",
+              "name": "Joel Ordóñez"
+            },
+            {
+              "id": "9",
+              "name": "Moisés Caicedo"
+            },
+            {
+              "id": "10",
+              "name": "Alan Franco"
+            },
+            {
+              "id": "11",
+              "name": "Kendry Páez"
+            },
+            {
+              "id": "12",
+              "name": "Pedro Vite"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "John Veboah"
+            },
+            {
+              "id": "15",
+              "name": "Leonardo Campana"
+            },
+            {
+              "id": "16",
+              "name": "Gonzalo Plata"
+            },
+            {
+              "id": "17",
+              "name": "Nilson Angulo"
+            },
+            {
+              "id": "18",
+              "name": "Alan Minda"
+            },
+            {
+              "id": "19",
+              "name": "Kevin Rodríguez"
+            },
+            {
+              "id": "20",
+              "name": "Enner Valencia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo F",
+        "en-US": "Group F",
+        "es-ES": "Grupo F"
+      },
+      "color": "#006450",
+      "items": [
+        {
+          "id": "NED",
+          "name": {
+            "pt-BR": "Holanda",
+            "en-US": "Netherlands",
+            "es-ES": "Países Bajos"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Bart Verbruggen"
+            },
+            {
+              "id": "3",
+              "name": "Virgil van Dijk"
+            },
+            {
+              "id": "4",
+              "name": "Micky van de Ven"
+            },
+            {
+              "id": "5",
+              "name": "Jurriën Timber"
+            },
+            {
+              "id": "6",
+              "name": "Denzel Dumfries"
+            },
+            {
+              "id": "7",
+              "name": "Nathan Aké"
+            },
+            {
+              "id": "8",
+              "name": "Jeremie Frimpong"
+            },
+            {
+              "id": "9",
+              "name": "Jan Paul van Hecke"
+            },
+            {
+              "id": "10",
+              "name": "Tijjani Reijnders"
+            },
+            {
+              "id": "11",
+              "name": "Ryan Gravenberch"
+            },
+            {
+              "id": "12",
+              "name": "Teun Koopmeiners"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Frenkie de Jong"
+            },
+            {
+              "id": "15",
+              "name": "Xavi Simons"
+            },
+            {
+              "id": "16",
+              "name": "Justin Kluivert"
+            },
+            {
+              "id": "17",
+              "name": "Memphis Depay"
+            },
+            {
+              "id": "18",
+              "name": "Donyell Malen"
+            },
+            {
+              "id": "19",
+              "name": "Wout Weghorst"
+            },
+            {
+              "id": "20",
+              "name": "Cody Gakpo"
+            }
+          ]
+        },
+        {
+          "id": "JPN",
+          "name": {
+            "pt-BR": "Japão",
+            "en-US": "Japan",
+            "es-ES": "Japón"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Zion Suzuki"
+            },
+            {
+              "id": "3",
+              "name": "Henry Heroki Mochizuki"
+            },
+            {
+              "id": "4",
+              "name": "Ayumu Seko"
+            },
+            {
+              "id": "5",
+              "name": "Junnosuke Suzuki"
+            },
+            {
+              "id": "6",
+              "name": "Shogo Taniguchi"
+            },
+            {
+              "id": "7",
+              "name": "Tsuyoshi Watanabe"
+            },
+            {
+              "id": "8",
+              "name": "Kaishu Sano"
+            },
+            {
+              "id": "9",
+              "name": "Yuki Soma"
+            },
+            {
+              "id": "10",
+              "name": "Ao Tanaka"
+            },
+            {
+              "id": "11",
+              "name": "Daichi Kamada"
+            },
+            {
+              "id": "12",
+              "name": "Takefusa Kubo"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Ritsu Doan"
+            },
+            {
+              "id": "15",
+              "name": "Keito Nakamura"
+            },
+            {
+              "id": "16",
+              "name": "Takumi Minamino"
+            },
+            {
+              "id": "17",
+              "name": "Shuto Machino"
+            },
+            {
+              "id": "18",
+              "name": "Junya Ito"
+            },
+            {
+              "id": "19",
+              "name": "Koki Ogawa"
+            },
+            {
+              "id": "20",
+              "name": "Ayase Ueda"
+            }
+          ]
+        },
+        {
+          "id": "SWE",
+          "name": {
+            "pt-BR": "Suécia",
+            "en-US": "Sweden",
+            "es-ES": "Suecia"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Victor Johansson"
+            },
+            {
+              "id": "3",
+              "name": "Isak Hien"
+            },
+            {
+              "id": "4",
+              "name": "Gabriel Gudmundsson"
+            },
+            {
+              "id": "5",
+              "name": "Emil Holm"
+            },
+            {
+              "id": "6",
+              "name": "Victor Nilsson Lindelöf"
+            },
+            {
+              "id": "7",
+              "name": "Gustaf Lagerbielke"
+            },
+            {
+              "id": "8",
+              "name": "Lucas Bergvall"
+            },
+            {
+              "id": "9",
+              "name": "Hugo Larsson"
+            },
+            {
+              "id": "10",
+              "name": "Jesper Karlström"
+            },
+            {
+              "id": "11",
+              "name": "Yasin Ayari"
+            },
+            {
+              "id": "12",
+              "name": "Mattias Svanberg"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Daniel Svensson"
+            },
+            {
+              "id": "15",
+              "name": "Ken Sema"
+            },
+            {
+              "id": "16",
+              "name": "Roony Bardghji"
+            },
+            {
+              "id": "17",
+              "name": "Dejan Kulusevski"
+            },
+            {
+              "id": "18",
+              "name": "Anthony Elanga"
+            },
+            {
+              "id": "19",
+              "name": "Alexander Isak"
+            },
+            {
+              "id": "20",
+              "name": "Viktor Gyökeres"
+            }
+          ]
+        },
+        {
+          "id": "TUN",
+          "name": {
+            "pt-BR": "Tunísia",
+            "en-US": "Tunisia",
+            "es-ES": "Túnez"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Bechir Ben Said"
+            },
+            {
+              "id": "3",
+              "name": "Aymen Dahmen"
+            },
+            {
+              "id": "4",
+              "name": "Van Valery"
+            },
+            {
+              "id": "5",
+              "name": "Montassar Talbi"
+            },
+            {
+              "id": "6",
+              "name": "Yassine Meriah"
+            },
+            {
+              "id": "7",
+              "name": "Ali Abdi"
+            },
+            {
+              "id": "8",
+              "name": "Dylan Bronn"
+            },
+            {
+              "id": "9",
+              "name": "Ellyes Skhiri"
+            },
+            {
+              "id": "10",
+              "name": "Aissa Laidouni"
+            },
+            {
+              "id": "11",
+              "name": "Ferjani Sassi"
+            },
+            {
+              "id": "12",
+              "name": "Mohamed Ali Ben Romdhane"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Hannibal Mejbri"
+            },
+            {
+              "id": "15",
+              "name": "Elias Achouri"
+            },
+            {
+              "id": "16",
+              "name": "Elias Saad"
+            },
+            {
+              "id": "17",
+              "name": "Hazem Mastouri"
+            },
+            {
+              "id": "18",
+              "name": "Ismael Gharbi"
+            },
+            {
+              "id": "19",
+              "name": "Sayfallah Ltaief"
+            },
+            {
+              "id": "20",
+              "name": "Naim Sliti"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo G",
+        "en-US": "Group G",
+        "es-ES": "Grupo G"
+      },
+      "color": "#877a9f",
+      "items": [
+        {
+          "id": "BEL",
+          "name": {
+            "pt-BR": "Bélgica",
+            "en-US": "Belgium",
+            "es-ES": "Bélgica"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Thibaut Courtois"
+            },
+            {
+              "id": "3",
+              "name": "Arthur Theate"
+            },
+            {
+              "id": "4",
+              "name": "Timothy Castagne"
+            },
+            {
+              "id": "5",
+              "name": "Zeno Debast"
+            },
+            {
+              "id": "6",
+              "name": "Brandon Mechele"
+            },
+            {
+              "id": "7",
+              "name": "Maxim De Cuyper"
+            },
+            {
+              "id": "8",
+              "name": "Thomas Meunier"
+            },
+            {
+              "id": "9",
+              "name": "Youri Tielemans"
+            },
+            {
+              "id": "10",
+              "name": "Amadou Onana"
+            },
+            {
+              "id": "11",
+              "name": "Nicolas Raskin"
+            },
+            {
+              "id": "12",
+              "name": "Alexis Saelemaekers"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Hans Vanaken"
+            },
+            {
+              "id": "15",
+              "name": "Kevin De Bruyne"
+            },
+            {
+              "id": "16",
+              "name": "Jérémy Doku"
+            },
+            {
+              "id": "17",
+              "name": "Charles De Ketelaere"
+            },
+            {
+              "id": "18",
+              "name": "Leandro Trossard"
+            },
+            {
+              "id": "19",
+              "name": "Loïs Openda"
+            },
+            {
+              "id": "20",
+              "name": "Romelu Lukaku"
+            }
+          ]
+        },
+        {
+          "id": "EGY",
+          "name": {
+            "pt-BR": "Egito",
+            "en-US": "Egypt",
+            "es-ES": "Egipto"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Mohamed El Shenawy"
+            },
+            {
+              "id": "3",
+              "name": "Mohamed Hany"
+            },
+            {
+              "id": "4",
+              "name": "Mohamed Hamdy"
+            },
+            {
+              "id": "5",
+              "name": "Yasser Ibrahim"
+            },
+            {
+              "id": "6",
+              "name": "Khaled Sobhi"
+            },
+            {
+              "id": "7",
+              "name": "Ramy Rabia"
+            },
+            {
+              "id": "8",
+              "name": "Hossam Abdelmaguid"
+            },
+            {
+              "id": "9",
+              "name": "Ahmed Fatouh"
+            },
+            {
+              "id": "10",
+              "name": "Marwan Attia"
+            },
+            {
+              "id": "11",
+              "name": "Zizo"
+            },
+            {
+              "id": "12",
+              "name": "Hamdy Fathy"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Mohamed Lasheen"
+            },
+            {
+              "id": "15",
+              "name": "Emam Ashour"
+            },
+            {
+              "id": "16",
+              "name": "Osama Faisal"
+            },
+            {
+              "id": "17",
+              "name": "Mohamed Salah"
+            },
+            {
+              "id": "18",
+              "name": "Mostafa Mohamed"
+            },
+            {
+              "id": "19",
+              "name": "Trezeguet"
+            },
+            {
+              "id": "20",
+              "name": "Omar Marmoush"
+            }
+          ]
+        },
+        {
+          "id": "IRN",
+          "name": {
+            "pt-BR": "Irã",
+            "en-US": "Iran",
+            "es-ES": "Irán"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Alireza Beiranvand"
+            },
+            {
+              "id": "3",
+              "name": "Morteza Pouraliganji"
+            },
+            {
+              "id": "4",
+              "name": "Ehsan Hajsafi"
+            },
+            {
+              "id": "5",
+              "name": "Milad Mohammadi"
+            },
+            {
+              "id": "6",
+              "name": "Shoja Khalilzadeh"
+            },
+            {
+              "id": "7",
+              "name": "Ramin Rezaeian"
+            },
+            {
+              "id": "8",
+              "name": "Hossein Kanaani"
+            },
+            {
+              "id": "9",
+              "name": "Sadegh Moharrami"
+            },
+            {
+              "id": "10",
+              "name": "Saleh Hardani"
+            },
+            {
+              "id": "11",
+              "name": "Saeed Ezatolahi"
+            },
+            {
+              "id": "12",
+              "name": "Saman Ghoddos"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Omid Noorafkan"
+            },
+            {
+              "id": "15",
+              "name": "Roozbeh Cheshmi"
+            },
+            {
+              "id": "16",
+              "name": "Mohammad Mohebi"
+            },
+            {
+              "id": "17",
+              "name": "Sardar Azmoun"
+            },
+            {
+              "id": "18",
+              "name": "Mehdi Taremi"
+            },
+            {
+              "id": "19",
+              "name": "Alireza Jahanbakhsh"
+            },
+            {
+              "id": "20",
+              "name": "Ali Gholizadeh"
+            }
+          ]
+        },
+        {
+          "id": "NZL",
+          "name": {
+            "pt-BR": "Nova Zelândia",
+            "en-US": "New Zealand",
+            "es-ES": "Nueva Zelanda"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Max Crocombe-Payne"
+            },
+            {
+              "id": "3",
+              "name": "Alex Paulsen"
+            },
+            {
+              "id": "4",
+              "name": "Michael Boxall"
+            },
+            {
+              "id": "5",
+              "name": "Liberato Cacace"
+            },
+            {
+              "id": "6",
+              "name": "Tim Payne"
+            },
+            {
+              "id": "7",
+              "name": "Tyler Bindon"
+            },
+            {
+              "id": "8",
+              "name": "Francis de Vries"
+            },
+            {
+              "id": "9",
+              "name": "Finn Surman"
+            },
+            {
+              "id": "10",
+              "name": "Joe Bell"
+            },
+            {
+              "id": "11",
+              "name": "Sarpreet Singh"
+            },
+            {
+              "id": "12",
+              "name": "Ryan Thomas"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Matthew Garbett"
+            },
+            {
+              "id": "15",
+              "name": "Marko Stamenić"
+            },
+            {
+              "id": "16",
+              "name": "Ben Old"
+            },
+            {
+              "id": "17",
+              "name": "Chris Wood"
+            },
+            {
+              "id": "18",
+              "name": "Elijah Just"
+            },
+            {
+              "id": "19",
+              "name": "Callum McCowatt"
+            },
+            {
+              "id": "20",
+              "name": "Kosta Barbarouses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo H",
+        "en-US": "Group H",
+        "es-ES": "Grupo H"
+      },
+      "color": "#5d8379",
+      "items": [
+        {
+          "id": "ESP",
+          "name": {
+            "pt-BR": "Espanha",
+            "en-US": "Spain",
+            "es-ES": "España"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Unai Simón"
+            },
+            {
+              "id": "3",
+              "name": "Robin Le Normand"
+            },
+            {
+              "id": "4",
+              "name": "Aymeric Laporte"
+            },
+            {
+              "id": "5",
+              "name": "Dean Huijsen"
+            },
+            {
+              "id": "6",
+              "name": "Pedro Porro"
+            },
+            {
+              "id": "7",
+              "name": "Dani Carvajal"
+            },
+            {
+              "id": "8",
+              "name": "Marc Cucurella"
+            },
+            {
+              "id": "9",
+              "name": "Martín Zubimendi"
+            },
+            {
+              "id": "10",
+              "name": "Rodri"
+            },
+            {
+              "id": "11",
+              "name": "Pedri"
+            },
+            {
+              "id": "12",
+              "name": "Fabián Ruiz"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Mikel Merino"
+            },
+            {
+              "id": "15",
+              "name": "Lamine Yamal"
+            },
+            {
+              "id": "16",
+              "name": "Dani Olmo"
+            },
+            {
+              "id": "17",
+              "name": "Nico Williams"
+            },
+            {
+              "id": "18",
+              "name": "Ferran Torres"
+            },
+            {
+              "id": "19",
+              "name": "Álvaro Morata"
+            },
+            {
+              "id": "20",
+              "name": "Mikel Oyarzabal"
+            }
+          ]
+        },
+        {
+          "id": "CPV",
+          "name": {
+            "pt-BR": "Cabo Verde",
+            "en-US": "Cape Verde",
+            "es-ES": "Cabo Verde"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Vozinha"
+            },
+            {
+              "id": "3",
+              "name": "Logan Costa"
+            },
+            {
+              "id": "4",
+              "name": "Pico"
+            },
+            {
+              "id": "5",
+              "name": "Diney"
+            },
+            {
+              "id": "6",
+              "name": "Steven Moreira"
+            },
+            {
+              "id": "7",
+              "name": "Wagner Pina"
+            },
+            {
+              "id": "8",
+              "name": "João Paulo"
+            },
+            {
+              "id": "9",
+              "name": "Yannick Semedo"
+            },
+            {
+              "id": "10",
+              "name": "Kevin Pina"
+            },
+            {
+              "id": "11",
+              "name": "Patrick Andrade"
+            },
+            {
+              "id": "12",
+              "name": "Jamiro Monteiro"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Deroy Duarte"
+            },
+            {
+              "id": "15",
+              "name": "Garry Rodrigues"
+            },
+            {
+              "id": "16",
+              "name": "Jovane Cabral"
+            },
+            {
+              "id": "17",
+              "name": "Ryan Mendes"
+            },
+            {
+              "id": "18",
+              "name": "Dailon Livramento"
+            },
+            {
+              "id": "19",
+              "name": "Willy Semedo"
+            },
+            {
+              "id": "20",
+              "name": "Bebé"
+            }
+          ]
+        },
+        {
+          "id": "KSA",
+          "name": {
+            "pt-BR": "Arábia Saudita",
+            "en-US": "Saudi Arabia",
+            "es-ES": "Arabia Saudita"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Nawaf Alaqidi"
+            },
+            {
+              "id": "3",
+              "name": "Abdulrahman Al-Sanbi"
+            },
+            {
+              "id": "4",
+              "name": "Saud Abdulhamid"
+            },
+            {
+              "id": "5",
+              "name": "Nawaf Boushal"
+            },
+            {
+              "id": "6",
+              "name": "Jihad Thakri"
+            },
+            {
+              "id": "7",
+              "name": "Moteb Al-Harbi"
+            },
+            {
+              "id": "8",
+              "name": "Hassan Altambakti"
+            },
+            {
+              "id": "9",
+              "name": "Musab Aljuwayr"
+            },
+            {
+              "id": "10",
+              "name": "Ziyad Aljohani"
+            },
+            {
+              "id": "11",
+              "name": "Abdullah Alkhaibari"
+            },
+            {
+              "id": "12",
+              "name": "Nasser Aldawsari"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Saleh Abu Alshamat"
+            },
+            {
+              "id": "15",
+              "name": "Marwan Alsahafi"
+            },
+            {
+              "id": "16",
+              "name": "Salem Aldawsari"
+            },
+            {
+              "id": "17",
+              "name": "Abdulrahman Al-Aboud"
+            },
+            {
+              "id": "18",
+              "name": "Feras Albrikan"
+            },
+            {
+              "id": "19",
+              "name": "Saleh Alshehri"
+            },
+            {
+              "id": "20",
+              "name": "Abdullah Al-Hamdan"
+            }
+          ]
+        },
+        {
+          "id": "URU",
+          "name": {
+            "pt-BR": "Uruguai",
+            "en-US": "Uruguay",
+            "es-ES": "Uruguay"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Sergio Rochet"
+            },
+            {
+              "id": "3",
+              "name": "Santiago Mele"
+            },
+            {
+              "id": "4",
+              "name": "Ronald Araujo"
+            },
+            {
+              "id": "5",
+              "name": "José María Giménez"
+            },
+            {
+              "id": "6",
+              "name": "Sebastian Caceres"
+            },
+            {
+              "id": "7",
+              "name": "Mathias Olivera"
+            },
+            {
+              "id": "8",
+              "name": "Guillermo Varela"
+            },
+            {
+              "id": "9",
+              "name": "Nahitan Nandez"
+            },
+            {
+              "id": "10",
+              "name": "Federico Valverde"
+            },
+            {
+              "id": "11",
+              "name": "Giorgian De Arrascaeta"
+            },
+            {
+              "id": "12",
+              "name": "Rodrigo Bentancur"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Manuel Ugarte"
+            },
+            {
+              "id": "15",
+              "name": "Nicolás de la Cruz"
+            },
+            {
+              "id": "16",
+              "name": "Maxi Araujo"
+            },
+            {
+              "id": "17",
+              "name": "Darwin Núñez"
+            },
+            {
+              "id": "18",
+              "name": "Federico Viñas"
+            },
+            {
+              "id": "19",
+              "name": "Rodrigo Aguirre"
+            },
+            {
+              "id": "20",
+              "name": "Facundo Pellistri"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo I",
+        "en-US": "Group I",
+        "es-ES": "Grupo I"
+      },
+      "color": "#3c2c72",
+      "items": [
+        {
+          "id": "FRA",
+          "name": {
+            "pt-BR": "França",
+            "en-US": "France",
+            "es-ES": "Francia"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Mike Maignan"
+            },
+            {
+              "id": "3",
+              "name": "Theo Hernández"
+            },
+            {
+              "id": "4",
+              "name": "William Saliba"
+            },
+            {
+              "id": "5",
+              "name": "Jules Koundé"
+            },
+            {
+              "id": "6",
+              "name": "Ibrahima Konaté"
+            },
+            {
+              "id": "7",
+              "name": "Dayot Upamecano"
+            },
+            {
+              "id": "8",
+              "name": "Lucas Digne"
+            },
+            {
+              "id": "9",
+              "name": "Aurélien Tchouaméni"
+            },
+            {
+              "id": "10",
+              "name": "Eduardo Camavinga"
+            },
+            {
+              "id": "11",
+              "name": "Manu Koné"
+            },
+            {
+              "id": "12",
+              "name": "Adrien Rabiot"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Michael Olise"
+            },
+            {
+              "id": "15",
+              "name": "Ousmane Dembélé"
+            },
+            {
+              "id": "16",
+              "name": "Bradley Barcola"
+            },
+            {
+              "id": "17",
+              "name": "Désiré Doué"
+            },
+            {
+              "id": "18",
+              "name": "Kingsley Coman"
+            },
+            {
+              "id": "19",
+              "name": "Hugo Ekitike"
+            },
+            {
+              "id": "20",
+              "name": "Kylian Mbappé"
+            }
+          ]
+        },
+        {
+          "id": "SEN",
+          "name": {
+            "pt-BR": "Senegal",
+            "en-US": "Senegal",
+            "es-ES": "Senegal"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Eduardo Mendy"
+            },
+            {
+              "id": "3",
+              "name": "Yehvann Diouf"
+            },
+            {
+              "id": "4",
+              "name": "Moussa Niakhaté"
+            },
+            {
+              "id": "5",
+              "name": "Abdoulaye Seck"
+            },
+            {
+              "id": "6",
+              "name": "Ismail Jakobs"
+            },
+            {
+              "id": "7",
+              "name": "El Hadji Malick Diouf"
+            },
+            {
+              "id": "8",
+              "name": "Kalidou Koulibaly"
+            },
+            {
+              "id": "9",
+              "name": "Idrissa Gana Gueye"
+            },
+            {
+              "id": "10",
+              "name": "Pape Matar Sarr"
+            },
+            {
+              "id": "11",
+              "name": "Pape Gueye"
+            },
+            {
+              "id": "12",
+              "name": "Habib Diarra"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Lamine Camara"
+            },
+            {
+              "id": "15",
+              "name": "Sadio Mane"
+            },
+            {
+              "id": "16",
+              "name": "Ismaïla Sarr"
+            },
+            {
+              "id": "17",
+              "name": "Boulaye Dia"
+            },
+            {
+              "id": "18",
+              "name": "Iliman Ndiaye"
+            },
+            {
+              "id": "19",
+              "name": "Nicolas Jackson"
+            },
+            {
+              "id": "20",
+              "name": "Krepin Diatta"
+            }
+          ]
+        },
+        {
+          "id": "IRQ",
+          "name": {
+            "pt-BR": "Iraque",
+            "en-US": "Iraq",
+            "es-ES": "Irak"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Jalal Hassan"
+            },
+            {
+              "id": "3",
+              "name": "Rebin Sulaka"
+            },
+            {
+              "id": "4",
+              "name": "Hussein Ali"
+            },
+            {
+              "id": "5",
+              "name": "Akam Hashem"
+            },
+            {
+              "id": "6",
+              "name": "Merchas Doski"
+            },
+            {
+              "id": "7",
+              "name": "Zaid Tahseen"
+            },
+            {
+              "id": "8",
+              "name": "Manaf Younis"
+            },
+            {
+              "id": "9",
+              "name": "Zidane Iqbal"
+            },
+            {
+              "id": "10",
+              "name": "Amir Al-Ammari"
+            },
+            {
+              "id": "11",
+              "name": "Ibrahim Bayesh"
+            },
+            {
+              "id": "12",
+              "name": "Ali Jasim"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Youssef Amyn"
+            },
+            {
+              "id": "15",
+              "name": "Aimar Sher"
+            },
+            {
+              "id": "16",
+              "name": "Marko Farji"
+            },
+            {
+              "id": "17",
+              "name": "Osama Rashid"
+            },
+            {
+              "id": "18",
+              "name": "Ali Al-Hamadi"
+            },
+            {
+              "id": "19",
+              "name": "Aymen Hussein"
+            },
+            {
+              "id": "20",
+              "name": "Mohanad Ali"
+            }
+          ]
+        },
+        {
+          "id": "NOR",
+          "name": {
+            "pt-BR": "Noruega",
+            "en-US": "Norway",
+            "es-ES": "Noruega"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Ørjan Nyland"
+            },
+            {
+              "id": "3",
+              "name": "Julian Ryerson"
+            },
+            {
+              "id": "4",
+              "name": "Leo Østigård"
+            },
+            {
+              "id": "5",
+              "name": "Kristoffer Ajer"
+            },
+            {
+              "id": "6",
+              "name": "Marcus Holmgren Pedersen"
+            },
+            {
+              "id": "7",
+              "name": "David Møller Wolfe"
+            },
+            {
+              "id": "8",
+              "name": "Torbjørn Heggem"
+            },
+            {
+              "id": "9",
+              "name": "Morten Thorsby"
+            },
+            {
+              "id": "10",
+              "name": "Martin Ødegaard"
+            },
+            {
+              "id": "11",
+              "name": "Sander Berge"
+            },
+            {
+              "id": "12",
+              "name": "Andreas Schjelderup"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Patrick Berg"
+            },
+            {
+              "id": "15",
+              "name": "Erling Haaland"
+            },
+            {
+              "id": "16",
+              "name": "Alexander Sørloth"
+            },
+            {
+              "id": "17",
+              "name": "Aron Dønnum"
+            },
+            {
+              "id": "18",
+              "name": "Jørgen Strand Larsen"
+            },
+            {
+              "id": "19",
+              "name": "Antonio Nusa"
+            },
+            {
+              "id": "20",
+              "name": "Oscar Bobb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo J",
+        "en-US": "Group J",
+        "es-ES": "Grupo J"
+      },
+      "color": "#aa7b6e",
+      "items": [
+        {
+          "id": "ARG",
+          "name": {
+            "pt-BR": "Argentina",
+            "en-US": "Argentina",
+            "es-ES": "Argentina"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Emiliano Martínez"
+            },
+            {
+              "id": "3",
+              "name": "Nahuel Molina"
+            },
+            {
+              "id": "4",
+              "name": "Cristian Romero"
+            },
+            {
+              "id": "5",
+              "name": "Nicolás Otamendi"
+            },
+            {
+              "id": "6",
+              "name": "Nicolás Tagliafico"
+            },
+            {
+              "id": "7",
+              "name": "Leonardo Balerdi"
+            },
+            {
+              "id": "8",
+              "name": "Enzo Fernández"
+            },
+            {
+              "id": "9",
+              "name": "Alexis Mac Allister"
+            },
+            {
+              "id": "10",
+              "name": "Rodrigo De Paul"
+            },
+            {
+              "id": "11",
+              "name": "Exequiel Palacios"
+            },
+            {
+              "id": "12",
+              "name": "Leandro Paredes"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Nico Paz"
+            },
+            {
+              "id": "15",
+              "name": "Franco Mastantuono"
+            },
+            {
+              "id": "16",
+              "name": "Nico González"
+            },
+            {
+              "id": "17",
+              "name": "Lionel Messi"
+            },
+            {
+              "id": "18",
+              "name": "Lautaro Martínez"
+            },
+            {
+              "id": "19",
+              "name": "Julián Álvarez"
+            },
+            {
+              "id": "20",
+              "name": "Giuliano Simeone"
+            }
+          ]
+        },
+        {
+          "id": "ALG",
+          "name": {
+            "pt-BR": "Argélia",
+            "en-US": "Algeria",
+            "es-ES": "Argelia"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Alexis Guendouz"
+            },
+            {
+              "id": "3",
+              "name": "Ramy Bensebaini"
+            },
+            {
+              "id": "4",
+              "name": "Youcef Atal"
+            },
+            {
+              "id": "5",
+              "name": "Rayan Aït-Nouri"
+            },
+            {
+              "id": "6",
+              "name": "Mohamed Amine Tougai"
+            },
+            {
+              "id": "7",
+              "name": "Aïssa Mandi"
+            },
+            {
+              "id": "8",
+              "name": "Ismael Bennacer"
+            },
+            {
+              "id": "9",
+              "name": "Houssem Aouar"
+            },
+            {
+              "id": "10",
+              "name": "Hicham Boudaoui"
+            },
+            {
+              "id": "11",
+              "name": "Ramiz Zerrouki"
+            },
+            {
+              "id": "12",
+              "name": "Nabil Bentaleb"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Farés Chaibi"
+            },
+            {
+              "id": "15",
+              "name": "Riyad Mahrez"
+            },
+            {
+              "id": "16",
+              "name": "Said Benrahma"
+            },
+            {
+              "id": "17",
+              "name": "Anis Hadj Moussa"
+            },
+            {
+              "id": "18",
+              "name": "Amine Gouiri"
+            },
+            {
+              "id": "19",
+              "name": "Baghdad Bounedjah"
+            },
+            {
+              "id": "20",
+              "name": "Mohammed Amoura"
+            }
+          ]
+        },
+        {
+          "id": "AUT",
+          "name": {
+            "pt-BR": "Áustria",
+            "en-US": "Austria",
+            "es-ES": "Austria"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Alexander Schlager"
+            },
+            {
+              "id": "3",
+              "name": "Patrick Pentz"
+            },
+            {
+              "id": "4",
+              "name": "David Alaba"
+            },
+            {
+              "id": "5",
+              "name": "Kevin Danso"
+            },
+            {
+              "id": "6",
+              "name": "Philipp Lienhart"
+            },
+            {
+              "id": "7",
+              "name": "Stefan Posch"
+            },
+            {
+              "id": "8",
+              "name": "Phillipp Mwene"
+            },
+            {
+              "id": "9",
+              "name": "Alexander Prass"
+            },
+            {
+              "id": "10",
+              "name": "Xaver Schlager"
+            },
+            {
+              "id": "11",
+              "name": "Marcel Sabitzer"
+            },
+            {
+              "id": "12",
+              "name": "Konrad Laimer"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Florian Grillitsch"
+            },
+            {
+              "id": "15",
+              "name": "Nicolas Seiwald"
+            },
+            {
+              "id": "16",
+              "name": "Romano Schmid"
+            },
+            {
+              "id": "17",
+              "name": "Patrick Wimmer"
+            },
+            {
+              "id": "18",
+              "name": "Christoph Baumgartner"
+            },
+            {
+              "id": "19",
+              "name": "Michael Gregoritsch"
+            },
+            {
+              "id": "20",
+              "name": "Marko Arnautović"
+            }
+          ]
+        },
+        {
+          "id": "JOR",
+          "name": {
+            "pt-BR": "Jordânia",
+            "en-US": "Jordan",
+            "es-ES": "Jordania"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Yazeed Abulaila"
+            },
+            {
+              "id": "3",
+              "name": "Ihsan Haddad"
+            },
+            {
+              "id": "4",
+              "name": "Mohammad Abu Hashish"
+            },
+            {
+              "id": "5",
+              "name": "Yazan Al-Arab"
+            },
+            {
+              "id": "6",
+              "name": "Abdallah Nasib"
+            },
+            {
+              "id": "7",
+              "name": "Saleem Obaid"
+            },
+            {
+              "id": "8",
+              "name": "Mohammad Abualnadi"
+            },
+            {
+              "id": "9",
+              "name": "Ibrahim Saadeh"
+            },
+            {
+              "id": "10",
+              "name": "Nizar Al-Rashdan"
+            },
+            {
+              "id": "11",
+              "name": "Noor Al-Rawabdeh"
+            },
+            {
+              "id": "12",
+              "name": "Mohannad Abu Taha"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Amer Jamous"
+            },
+            {
+              "id": "15",
+              "name": "Musa Al-Taamari"
+            },
+            {
+              "id": "16",
+              "name": "Yazan Al-Naimat"
+            },
+            {
+              "id": "17",
+              "name": "Mahmoud Al-Mardi"
+            },
+            {
+              "id": "18",
+              "name": "Ali Olwan"
+            },
+            {
+              "id": "19",
+              "name": "Mohammad Abu Zrayq"
+            },
+            {
+              "id": "20",
+              "name": "Ibrahim Sabra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo K",
+        "en-US": "Group K",
+        "es-ES": "Grupo K"
+      },
+      "color": "#e537b2",
+      "items": [
+        {
+          "id": "POR",
+          "name": {
+            "pt-BR": "Portugal",
+            "en-US": "Portugal",
+            "es-ES": "Portugal"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Diogo Costa"
+            },
+            {
+              "id": "3",
+              "name": "Jose Sa"
+            },
+            {
+              "id": "4",
+              "name": "Ruben Dias"
+            },
+            {
+              "id": "5",
+              "name": "João Cancelo"
+            },
+            {
+              "id": "6",
+              "name": "Diogo Dalot"
+            },
+            {
+              "id": "7",
+              "name": "Nuno Mendes"
+            },
+            {
+              "id": "8",
+              "name": "Gonçalo Inácio"
+            },
+            {
+              "id": "9",
+              "name": "Bernardo Silva"
+            },
+            {
+              "id": "10",
+              "name": "Bruno Fernandes"
+            },
+            {
+              "id": "11",
+              "name": "Ruben Neves"
+            },
+            {
+              "id": "12",
+              "name": "Vitinha"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "João Neves"
+            },
+            {
+              "id": "15",
+              "name": "Cristiano Ronaldo"
+            },
+            {
+              "id": "16",
+              "name": "Francisco Trincão"
+            },
+            {
+              "id": "17",
+              "name": "João Felix"
+            },
+            {
+              "id": "18",
+              "name": "Gonçalo Ramos"
+            },
+            {
+              "id": "19",
+              "name": "Pedro Neto"
+            },
+            {
+              "id": "20",
+              "name": "Rafael Leão"
+            }
+          ]
+        },
+        {
+          "id": "COD",
+          "name": {
+            "pt-BR": "RD Congo",
+            "en-US": "DR Congo",
+            "es-ES": "RD del Congo"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Lionel Mpasi"
+            },
+            {
+              "id": "3",
+              "name": "Aaron Wan-Bissaka"
+            },
+            {
+              "id": "4",
+              "name": "Axel Tuanzebe"
+            },
+            {
+              "id": "5",
+              "name": "Arthur Masuaku"
+            },
+            {
+              "id": "6",
+              "name": "Chancel Mbemba"
+            },
+            {
+              "id": "7",
+              "name": "Joris Kayembe"
+            },
+            {
+              "id": "8",
+              "name": "Charles Pickel"
+            },
+            {
+              "id": "9",
+              "name": "Ngal’ayel Mukau"
+            },
+            {
+              "id": "10",
+              "name": "Edo Kayembe"
+            },
+            {
+              "id": "11",
+              "name": "Samuel Moutoussamy"
+            },
+            {
+              "id": "12",
+              "name": "Noah Sadiki"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Théo Bongonda"
+            },
+            {
+              "id": "15",
+              "name": "Meschack Elia"
+            },
+            {
+              "id": "16",
+              "name": "Yoane Wissa"
+            },
+            {
+              "id": "17",
+              "name": "Brian Cipenga"
+            },
+            {
+              "id": "18",
+              "name": "Fiston Mayele"
+            },
+            {
+              "id": "19",
+              "name": "Cédric Bakambu"
+            },
+            {
+              "id": "20",
+              "name": "Nathanaël Mbuku"
+            }
+          ]
+        },
+        {
+          "id": "UZB",
+          "name": {
+            "pt-BR": "Uzbequistão",
+            "en-US": "Uzbekistan",
+            "es-ES": "Uzbekistán"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Utkir Yusupov"
+            },
+            {
+              "id": "3",
+              "name": "Farrukh Savfiev"
+            },
+            {
+              "id": "4",
+              "name": "Sherzod Nasrullaev"
+            },
+            {
+              "id": "5",
+              "name": "Umar Eshmurodov"
+            },
+            {
+              "id": "6",
+              "name": "Husniddin Aliqulov"
+            },
+            {
+              "id": "7",
+              "name": "Rustamjon Ashurmatov"
+            },
+            {
+              "id": "8",
+              "name": "Khojiakbar Alijonov"
+            },
+            {
+              "id": "9",
+              "name": "Abdukodir Khusanov"
+            },
+            {
+              "id": "10",
+              "name": "Odiljon Hamrobekov"
+            },
+            {
+              "id": "11",
+              "name": "Otabek Shukurov"
+            },
+            {
+              "id": "12",
+              "name": "Jamshid Iskanderov"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Azizbek Turgunboev"
+            },
+            {
+              "id": "15",
+              "name": "Khojimat Erkinov"
+            },
+            {
+              "id": "16",
+              "name": "Eldor Shomurodov"
+            },
+            {
+              "id": "17",
+              "name": "Oston Urunov"
+            },
+            {
+              "id": "18",
+              "name": "Jaloliddin Masharipov"
+            },
+            {
+              "id": "19",
+              "name": "Igor Sergeev"
+            },
+            {
+              "id": "20",
+              "name": "Abbosbek Fayzullaev"
+            }
+          ]
+        },
+        {
+          "id": "COL",
+          "name": {
+            "pt-BR": "Colômbia",
+            "en-US": "Colombia",
+            "es-ES": "Colombia"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Camilo Vargas"
+            },
+            {
+              "id": "3",
+              "name": "David Ospina"
+            },
+            {
+              "id": "4",
+              "name": "Dávinson Sánchez"
+            },
+            {
+              "id": "5",
+              "name": "Yerry Mina"
+            },
+            {
+              "id": "6",
+              "name": "Daniel Muñoz"
+            },
+            {
+              "id": "7",
+              "name": "Johan Mojica"
+            },
+            {
+              "id": "8",
+              "name": "Jhon Lucumí"
+            },
+            {
+              "id": "9",
+              "name": "Santiago Arias"
+            },
+            {
+              "id": "10",
+              "name": "Jefferson Lerma"
+            },
+            {
+              "id": "11",
+              "name": "Kevin Castaño"
+            },
+            {
+              "id": "12",
+              "name": "Richard Ríos"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "James Rodríguez"
+            },
+            {
+              "id": "15",
+              "name": "Juan Fernando Quintero"
+            },
+            {
+              "id": "16",
+              "name": "Jorge Carrascal"
+            },
+            {
+              "id": "17",
+              "name": "Jhon Arias"
+            },
+            {
+              "id": "18",
+              "name": "Jhon Córdoba"
+            },
+            {
+              "id": "19",
+              "name": "Luis Suárez"
+            },
+            {
+              "id": "20",
+              "name": "Luis Díaz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "Grupo L",
+        "en-US": "Group L",
+        "es-ES": "Grupo L"
+      },
+      "color": "#7f1b1d",
+      "items": [
+        {
+          "id": "ENG",
+          "name": {
+            "pt-BR": "Inglaterra",
+            "en-US": "England",
+            "es-ES": "Inglaterra"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Jordan Pickford"
+            },
+            {
+              "id": "3",
+              "name": "John Stones"
+            },
+            {
+              "id": "4",
+              "name": "Marc Guéhi"
+            },
+            {
+              "id": "5",
+              "name": "Ezri Konsa"
+            },
+            {
+              "id": "6",
+              "name": "Trent Alexander-Arnold"
+            },
+            {
+              "id": "7",
+              "name": "Reece James"
+            },
+            {
+              "id": "8",
+              "name": "Dan Burn"
+            },
+            {
+              "id": "9",
+              "name": "Jordan Henderson"
+            },
+            {
+              "id": "10",
+              "name": "Declan Rice"
+            },
+            {
+              "id": "11",
+              "name": "Jude Bellingham"
+            },
+            {
+              "id": "12",
+              "name": "Cole Palmer"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Morgan Rogers"
+            },
+            {
+              "id": "15",
+              "name": "Anthony Gordon"
+            },
+            {
+              "id": "16",
+              "name": "Phil Foden"
+            },
+            {
+              "id": "17",
+              "name": "Bukayo Saka"
+            },
+            {
+              "id": "18",
+              "name": "Harry Kane"
+            },
+            {
+              "id": "19",
+              "name": "Marcus Rashford"
+            },
+            {
+              "id": "20",
+              "name": "Ollie Watkins"
+            }
+          ]
+        },
+        {
+          "id": "CRO",
+          "name": {
+            "pt-BR": "Croácia",
+            "en-US": "Croatia",
+            "es-ES": "Croacia"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Dominik Livaković"
+            },
+            {
+              "id": "3",
+              "name": "Duje Ćaleta-Car"
+            },
+            {
+              "id": "4",
+              "name": "Joško Gvardiol"
+            },
+            {
+              "id": "5",
+              "name": "Josip Stanišić"
+            },
+            {
+              "id": "6",
+              "name": "Luka Vušković"
+            },
+            {
+              "id": "7",
+              "name": "Josip Šutalo"
+            },
+            {
+              "id": "8",
+              "name": "Kristijan Jakić"
+            },
+            {
+              "id": "9",
+              "name": "Luka Modrić"
+            },
+            {
+              "id": "10",
+              "name": "Mateo Kovačić"
+            },
+            {
+              "id": "11",
+              "name": "Martin Baturina"
+            },
+            {
+              "id": "12",
+              "name": "Lovro Majer"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Mario Pašalić"
+            },
+            {
+              "id": "15",
+              "name": "Petar Sučić"
+            },
+            {
+              "id": "16",
+              "name": "Ivan Perišić"
+            },
+            {
+              "id": "17",
+              "name": "Marco Pašalić"
+            },
+            {
+              "id": "18",
+              "name": "Ante Budimir"
+            },
+            {
+              "id": "19",
+              "name": "Andrej Kramarić"
+            },
+            {
+              "id": "20",
+              "name": "Franjo Ivanović"
+            }
+          ]
+        },
+        {
+          "id": "GHA",
+          "name": {
+            "pt-BR": "Gana",
+            "en-US": "Ghana",
+            "es-ES": "Ghana"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Lawrence Ati Zigi"
+            },
+            {
+              "id": "3",
+              "name": "Tariq Lamptey"
+            },
+            {
+              "id": "4",
+              "name": "Mohammed Salisu"
+            },
+            {
+              "id": "5",
+              "name": "Alidu Seidu"
+            },
+            {
+              "id": "6",
+              "name": "Alexander Djiku"
+            },
+            {
+              "id": "7",
+              "name": "Gideon Mensah"
+            },
+            {
+              "id": "8",
+              "name": "Caleb Yirenkyi"
+            },
+            {
+              "id": "9",
+              "name": "Abdul Fatawu Issahaku"
+            },
+            {
+              "id": "10",
+              "name": "Thomas Partey"
+            },
+            {
+              "id": "11",
+              "name": "Salis Abdul Samed"
+            },
+            {
+              "id": "12",
+              "name": "Kamaldeen Sulemana"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Mohammed Kudus"
+            },
+            {
+              "id": "15",
+              "name": "Iñaki Williams"
+            },
+            {
+              "id": "16",
+              "name": "Jordan Ayew"
+            },
+            {
+              "id": "17",
+              "name": "André Ayew"
+            },
+            {
+              "id": "18",
+              "name": "Joseph Paintsil"
+            },
+            {
+              "id": "19",
+              "name": "Osman Bukari"
+            },
+            {
+              "id": "20",
+              "name": "Antoine Semenyo"
+            }
+          ]
+        },
+        {
+          "id": "PAN",
+          "name": {
+            "pt-BR": "Panamá",
+            "en-US": "Panamá",
+            "es-ES": "Panamá"
+          },
+          "items": [
+            {
+              "id": "1",
+              "name": {
+                "pt-BR": "Brasão",
+                "en-US": "Crest",
+                "es-ES": "Escudo"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Orlando Mosquera"
+            },
+            {
+              "id": "3",
+              "name": "Luis Mejía"
+            },
+            {
+              "id": "4",
+              "name": "Fidel Escobar"
+            },
+            {
+              "id": "5",
+              "name": "Andrés Andrade"
+            },
+            {
+              "id": "6",
+              "name": "Michael Amir Murillo"
+            },
+            {
+              "id": "7",
+              "name": "Eric Davis"
+            },
+            {
+              "id": "8",
+              "name": "José Córdoba"
+            },
+            {
+              "id": "9",
+              "name": "César Blackman"
+            },
+            {
+              "id": "10",
+              "name": "Cristian Martínez"
+            },
+            {
+              "id": "11",
+              "name": "Aníbal Godoy"
+            },
+            {
+              "id": "12",
+              "name": "Adalberto Carrasquilla"
+            },
+            {
+              "id": "13",
+              "name": {
+                "pt-BR": "Time",
+                "en-US": "Team",
+                "es-ES": "Equipo"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Édgar Bárcenas"
+            },
+            {
+              "id": "15",
+              "name": "Carlos Harvey"
+            },
+            {
+              "id": "16",
+              "name": "Ismael Díaz"
+            },
+            {
+              "id": "17",
+              "name": "José Fajardo"
+            },
+            {
+              "id": "18",
+              "name": "Cecilio Waterman"
+            },
+            {
+              "id": "19",
+              "name": "José Luis Rodríguez"
+            },
+            {
+              "id": "20",
+              "name": "Alberto Quintero"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "pt-BR": "História das Copas FIFA",
+        "en-US": "FIFA World Cup History",
+        "es-ES": "Historia de las Copas FIFA"
+      },
+      "items": [
+        {
+          "id": "FWC",
+          "name": {
+            "pt-BR": "História das Copas FIFA",
+            "en-US": "FIFA World Cup History",
+            "es-ES": "Historia de las Copas FIFA"
+          },
+          "items": [
+            {
+              "id": "9",
+              "name": "9"
+            },
+            {
+              "id": "10",
+              "name": "10"
+            },
+            {
+              "id": "11",
+              "name": "11"
+            },
+            {
+              "id": "12",
+              "name": "12"
+            },
+            {
+              "id": "13",
+              "name": "13"
+            },
+            {
+              "id": "14",
+              "name": "14"
+            },
+            {
+              "id": "15",
+              "name": "15"
+            },
+            {
+              "id": "16",
+              "name": "16"
+            },
+            {
+              "id": "17",
+              "name": "17"
+            },
+            {
+              "id": "18",
+              "name": "18"
+            },
+            {
+              "id": "19",
+              "name": "19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coca-Cola",
+      "items": [
+        {
+          "id": "CC",
+          "name": "Coca-Cola",
+          "items": [
+            {
+              "id": "1",
+              "name": "Lamine Yamal"
+            },
+            {
+              "id": "2",
+              "name": "Joshua Kimmich"
+            },
+            {
+              "id": "3",
+              "name": "Harry Kane"
+            },
+            {
+              "id": "4",
+              "name": "Santiago Giménez"
+            },
+            {
+              "id": "5",
+              "name": "Joško Gvardiol"
+            },
+            {
+              "id": "6",
+              "name": "Federico Valverde"
+            },
+            {
+              "id": "7",
+              "name": "Jefferson Lerma"
+            },
+            {
+              "id": "8",
+              "name": "Enner Valencia"
+            },
+            {
+              "id": "9",
+              "name": "Gabriel Magalhães"
+            },
+            {
+              "id": "10",
+              "name": "Virgil van Dijk"
+            },
+            {
+              "id": "11",
+              "name": "Alphonso Davies"
+            },
+            {
+              "id": "12",
+              "name": "Emiliano Martínez"
+            },
+            {
+              "id": "13",
+              "name": "Raúl Jiménez"
+            },
+            {
+              "id": "14",
+              "name": "Lautaro Martínez"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

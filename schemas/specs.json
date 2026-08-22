@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sticker-collection.dev/schema/spec-v1.json",
+  "type": "object",
+  "required": ["branding", "sections"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "branding": {
+      "type": "object",
+      "required": ["title", "shortName", "colors", "decorationFont", "uxFont", "printZoom"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "shortName": { "type": "string" },
+        "logoUrl": { "type": "string" },
+        "colors": {
+          "type": "object",
+          "required": ["background", "primary", "secondary", "error", "badge", "owned", "missing"],
+          "properties": {
+            "background": { "type": "string" },
+            "primary": { "type": "string" },
+            "secondary": { "type": "string" },
+            "error": { "type": "string" },
+            "badge": { "type": "string" },
+            "owned": { "type": "string" },
+            "missing": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "decorationFont": {
+          "type": "object",
+          "required": ["name", "url"],
+          "properties": { "name": { "type": "string" }, "url": { "type": "string" } },
+          "additionalProperties": false
+        },
+        "uxFont": {
+          "type": "object",
+          "required": ["name", "url"],
+          "properties": { "name": { "type": "string" }, "url": { "type": "string" } },
+          "additionalProperties": false
+        },
+        "printZoom": {
+          "type": "string"
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/section" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "localized": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "required": ["en-US"],
+          "properties": {
+            "en-US": { "type": "string" },
+            "pt-BR": { "type": "string" },
+            "es-ES": { "type": "string" }
+          },
+          "additionalProperties": { "type": "string" }
+        }
+      ]
+    },
+    "item": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "$ref": "#/$defs/localized" }
+      },
+      "additionalProperties": false
+    },
+    "group": {
+      "type": "object",
+      "required": ["id", "name", "items"],
+      "properties": {
+        "id": { "type": "string" },
+        "color": { "type": "string" },
+        "name": { "$ref": "#/$defs/localized" },
+        "items": { "type": "array", "items": { "$ref": "#/$defs/item" }, "minItems": 1 }
+      },
+      "additionalProperties": false
+    },
+    "section": {
+      "type": "object",
+      "required": ["name", "items"],
+      "properties": {
+        "color": { "type": "string" },
+        "name": { "$ref": "#/$defs/localized" },
+        "items": { "type": "array", "items": { "$ref": "#/$defs/group" }, "minItems": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

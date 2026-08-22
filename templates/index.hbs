@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="{{locale}}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="{{themeColor}}" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="{{title}}" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>{{title}}</title>
+    <script>
+      if (!location.pathname.endsWith('/')) {
+        location.replace(`${location.pathname}/${location.search}${location.hash}`);
+      }
+    </script>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="../icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/icon-180.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    {{#if uxFontUrl}}
+    <link rel="stylesheet" href="{{uxFontUrl}}" />
+    {{/if}}
+    <style>
+      @font-face {
+        font-family: '{{decorationFontName}}';
+        src: url('{{decorationFontUrl}}') format('opentype');
+        font-display: swap;
+      }
+    </style>
+    <style>:root{ {{{cssVars}}} }</style>
+    <style>{{{appCss}}}</style>
+    <script>
+      window.__APP_CONFIG__ = {
+        specId: "{{specId}}",
+        locale: "{{locale}}",
+        messages: {{{messagesJson}}},
+        specData: {{{specDataJson}}}
+      };
+      if ('serviceWorker' in navigator && window.isSecureContext) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./service-worker.js').catch(() => {});
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <main class="app">
+      <h1 id="app-title"><img src="{{logoUrl}}" alt="" aria-hidden="true" class="app-logo" /><span>{{title}}</span></h1>
+      <section id="tab-album" class="tab-pane">
+        <div class="progress"><span class="current-owned" id="current-total">0</span> {{ui.of}} {{lastSerial}} <span class="current-owned" id="current-percentage">0%</span> {{ui.remaining}}: <span id="current-remaining">0</span></div>
+        <div class="toolbar">
+          <input id="search-input" class="search" placeholder="{{ui.searchPlaceholder}}" value="" />
+          <button id="collapse-all" class="icon"><span class="material-symbols-outlined" aria-hidden="true">collapse_all</span><span>{{ui.collapse}}</span></button>
+          <button id="expand-all" class="icon"><span class="material-symbols-outlined" aria-hidden="true">expand_all</span><span>{{ui.expand}}</span></button>
+        </div>
+        <div id="album-groups">
+          {{#each groups}}
+          <section class="group" data-group-key="{{key}}" data-group-order="{{order}}" data-group-id="{{id}}" data-group-color="{{color}}" data-group-name="{{name}}" data-group-scoped-id="{{scopedId}}" data-total="{{total}}">
+            <button class="group-head" data-expand="{{key}}">
+	      <span>
+		<span class="group-id">{{id}}</span>
+		<span class="group-name">{{name}}</span>
+	      </span>
+              <span class="group-progress"><span class="current-owned" id="album-{{scopedId}}-current-total">0</span>/{{total}}</span>
+            </button>
+            <div class="grid hidden">
+              {{#each items}}
+              <div class="item" data-item-id="{{itemId}}" data-item-name="{{itemName}}" data-group-id="{{../id}}">
+                <button class="item-toggle" data-serial="{{serial}}">{{itemId}}</button>
+                <span class="dup dup-counter hidden" data-dup-badge="1">0</span>
+              </div>
+              {{/each}}
+            </div>
+          </section>
+          {{/each}}
+        </div>
+      </section>
+      <section id="tab-duplicates" class="tab-pane hidden">
+        <div class="progress"><span class="current-owned">{{ui.totalDuplicates}}</span> <span id="duplicates-total">0</span></div>
+        <div class="toolbar">
+          <input id="search-dups" class="search" placeholder="{{ui.searchPlaceholder}}" value="" />
+          <button id="collapse-all-dups" class="icon"><span class="material-symbols-outlined" aria-hidden="true">collapse_all</span><span>{{ui.collapse}}</span></button>
+          <button id="expand-all-dups" class="icon"><span class="material-symbols-outlined" aria-hidden="true">expand_all</span><span>{{ui.expand}}</span></button>
+        </div>
+        <div id="dup-groups">
+          {{#each groups}}
+          <section class="group" data-group-key="{{key}}" data-group-order="{{order}}" data-group-id="{{id}}" data-group-color="{{color}}" data-group-name="{{name}}" data-group-scoped-id="{{scopedId}}" data-total="{{total}}">
+            <button class="group-head" data-expand="{{key}}">
+	      <span>
+		<span class="group-id">{{id}}</span>
+		<span class="group-name">{{name}}</span>
+	      </span>
+              <span class="group-progress"><span id="duplicates-{{scopedId}}-current-total">0</span></span>
+            </button>
+            <div class="grid hidden">
+              {{#each items}}
+              <div class="item" data-item-id="{{itemId}}" data-item-name="{{itemName}}" data-group-id="{{../id}}">
+                <div class="item-label" data-serial="{{serial}}">{{itemId}}</div>
+                <div class="dup-editor" data-dup-editor="1">
+                  <button data-op="dec" data-serial="{{serial}}">-</button><span data-dup-count="1">0</span><button data-op="inc" data-serial="{{serial}}">+</button>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </section>
+          {{/each}}
+        </div>
+      </section>
+      <section id="tab-search" class="tab-pane hidden">
+        <div class="search-tab-wrap">
+          <div class="search-code-row">
+            <input id="quick-input" class="search search-code" value="" autocomplete="off" inputmode="text" />
+            <button id="quick-clear" class="icon" aria-label="{{ui.clearSearch}}"><span class="material-symbols-outlined" aria-hidden="true">cancel</span></button>
+          </div>
+          <div id="quick-result">
+            <p id="quick-help">{{ui.quickHelp}}</p>
+            <div id="quick-entry" class="item hidden" data-search-entry="1">
+              <button id="quick-toggle" class="item-toggle" data-serial="-1" data-quick-toggle="1">
+                <span id="quick-section-name" class="quick-sticker-section-name"></span>
+                <span id="quick-group-name" class="quick-sticker-group-name"></span>
+                <span id="quick-group-id" class="quick-sticker-group-id"></span>
+                <span id="quick-sticker-name" class="quick-sticker-name"></span>
+              </button>
+              <div class="quick-dup-label">{{ui.duplicatesLabel}}</div>
+              <div id="quick-dup-editor" class="dup-editor">
+                <button data-op="dec" data-serial="-1">-</button><span id="quick-dup-count">0</span><button data-op="inc" data-serial="-1">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tab-config" class="tab-pane hidden">
+        <h2>{{ui.preferences}}</h2>
+        <div class="config-list">
+          <label class="config-row config-field"><span class="config-label">{{ui.albumName}}</span><input id="cfg-name" type="text" placeholder="{{ui.albumNamePlaceholder}}" /></label>
+          <label class="config-row config-field"><span class="config-label">{{ui.sort}}</span><select id="cfg-sort"><option value="spec">{{ui.sortDefault}}</option><option value="alpha">{{ui.sortAlpha}}</option></select></label>
+          <label class="config-row config-toggle"><span class="config-label">{{ui.hideOwned}}</span><input id="cfg-hide-owned" type="checkbox" /></label>
+          <label class="config-row config-toggle"><span class="config-label">{{ui.hideCompleted}}</span><input id="cfg-hide-complete" type="checkbox" /></label>
+          <label class="config-row config-toggle"><span class="config-label">{{ui.showDup}}</span><input id="cfg-show-dup" type="checkbox" /></label>
+          <a class="icon config-about" href="#about"><span class="material-symbols-outlined" aria-hidden="true">info</span><span>{{ui.about}}</span></a>
+          <button id="cfg-reset-persisted" class="icon config-reset"><span class="material-symbols-outlined" aria-hidden="true">delete_forever</span><span>{{ui.resetPersistedState}}</span></button>
+        </div>
+      </section>
+      <section id="tab-about" class="tab-pane hidden">
+        <div class="about-page">
+          <h2>{{ui.about}}</h2>
+          <p>{{ui.aboutDescription}}</p>
+          <p>{{ui.aboutLicense}}</p>
+          <a class="icon about-source-link" href="https://github.com/barbieri/sticker-collection" target="_blank" rel="noopener noreferrer">
+            <img src="../../images/github.svg" alt="" aria-hidden="true" class="action-icon-svg" />
+            <span>{{ui.aboutSource}}</span>
+          </a>
+        </div>
+      </section>
+      <section id="tab-share" class="tab-pane hidden">
+        <div class="share-accordion">
+          <section class="share-accordion-section" data-share-section="exchange-list">
+            <button class="group-head share-accordion-head" type="button" data-share-accordion="exchange-list">
+              <span class="group-id">{{ui.shareExchangeTitle}}</span>
+              <span class="material-symbols-outlined share-chevron" data-share-chevron="exchange-list" aria-hidden="true">expand_more</span>
+            </button>
+            <div id="share-exchange-list-screen" class="hidden">
+            <h4>{{ui.shareTextTitle}}</h4>
+            <p>{{ui.shareTextDescription}}</p>
+            <div class="share-actions-list">
+            <button class="icon" id="share-exchange-text-open"><span class="material-symbols-outlined" aria-hidden="true">notes</span><span>{{ui.shareTextOpen}}</span></button>
+            <button class="icon" id="share-exchange-text-paste"><span class="material-symbols-outlined" aria-hidden="true">content_paste</span><span>{{ui.actionPaste}}</span></button>
+            <button class="icon" id="share-exchange-text-sendback-paste"><span class="material-symbols-outlined" aria-hidden="true">published_with_changes</span><span>{{ui.exchangeShareBackPasteTitle}}</span></button>
+            </div>
+            <h4>{{ui.shareAppLinkTitle}}</h4>
+            <h4>{{ui.shareExchangeSendTitle}}</h4>
+            <div class="share-actions-list">
+            <button class="icon" id="share-exchange-send-qr"><span class="material-symbols-outlined" aria-hidden="true">qr_code</span><span>{{ui.actionQrCode}}</span></button>
+            <button class="icon" id="share-exchange-send-sms"><span class="material-symbols-outlined" aria-hidden="true">sms</span><span>{{ui.actionSms}}</span></button>
+            <button class="icon" id="share-exchange-send-whatsapp"><img src="../../images/whatsapp.svg" alt="" aria-hidden="true" class="action-icon-svg" /><span>{{ui.actionWhatsapp}}</span></button>
+            <button class="icon" id="share-exchange-send-copy"><span class="material-symbols-outlined" aria-hidden="true">content_copy</span><span>{{ui.actionCopy}}</span></button>
+            </div>
+            <h4>{{ui.shareExchangeReceiveTitle}}</h4>
+            <div class="share-actions-list">
+            <button class="icon" id="share-exchange-receive-paste"><span class="material-symbols-outlined" aria-hidden="true">content_paste</span><span>{{ui.actionPaste}}</span></button>
+            </div>
+            </div>
+          </section>
+          <section class="share-accordion-section" data-share-section="export-list">
+            <button class="group-head share-accordion-head" type="button" data-share-accordion="export-list">
+              <span class="group-id">{{ui.shareExportTitle}}</span>
+              <span class="material-symbols-outlined share-chevron" data-share-chevron="export-list" aria-hidden="true">expand_more</span>
+            </button>
+            <div id="share-export-list-screen" class="hidden">
+            <p>{{ui.shareExportDescription}}</p>
+            <div class="share-actions-list">
+            <button class="icon" id="share-export-printer"><span class="material-symbols-outlined" aria-hidden="true">print</span><span>{{ui.actionPrinter}}</span></button>
+            </div>
+            </div>
+          </section>
+        </div>
+        <div id="share-receive-screen" class="hidden share-fullscreen-handler" data-route-path="share/receive" data-route-handler="handleExchangeReceive" data-route-lock="true">
+          <div class="share-fullscreen-content">
+          <h3>{{ui.exchangeReviewTitle}}</h3>
+          <p>{{ui.sourceAlbumName}}: <span id="share-receive-source-name"></span></p>
+          <div class="exchange-review-sections">
+            <section id="share-need-section" class="share-accordion-section exchange-review-section">
+              <button class="group-head share-accordion-head exchange-review-head" type="button" data-exchange-section-toggle="share-need-list" aria-controls="share-need-list" aria-expanded="true">
+                <span class="group-id">{{ui.whatINeed}}</span>
+                <span id="share-need-count" class="exchange-section-count">0</span>
+                <span class="material-symbols-outlined share-chevron" data-exchange-section-chevron="share-need-list" aria-hidden="true">expand_less</span>
+              </button>
+              <div id="share-need-list" class="exchange-section-body"></div>
+            </section>
+            <section id="share-need-duplicate-section" class="share-accordion-section exchange-review-section">
+              <button class="group-head share-accordion-head exchange-review-head" type="button" data-exchange-section-toggle="share-need-duplicate-list" aria-controls="share-need-duplicate-list" aria-expanded="true">
+                <span class="group-id">{{ui.alreadyOwned}}</span>
+                <span id="share-need-duplicate-count" class="exchange-section-count">0</span>
+                <span class="material-symbols-outlined share-chevron" data-exchange-section-chevron="share-need-duplicate-list" aria-hidden="true">expand_less</span>
+              </button>
+              <div id="share-need-duplicate-list" class="exchange-section-body"></div>
+            </section>
+            <section id="share-peer-section" class="share-accordion-section exchange-review-section">
+              <button class="group-head share-accordion-head exchange-review-head" type="button" data-exchange-section-toggle="share-peer-list" aria-controls="share-peer-list" aria-expanded="true">
+                <span class="group-id">{{ui.whatPeerNeeds}}</span>
+                <span id="share-peer-count" class="exchange-section-count">0</span>
+                <span class="material-symbols-outlined share-chevron" data-exchange-section-chevron="share-peer-list" aria-hidden="true">expand_less</span>
+              </button>
+              <div id="share-peer-list" class="exchange-section-body"></div>
+            </section>
+            <section id="share-peer-duplicate-section" class="share-accordion-section exchange-review-section">
+              <button class="group-head share-accordion-head exchange-review-head" type="button" data-exchange-section-toggle="share-peer-duplicate-list" aria-controls="share-peer-duplicate-list" aria-expanded="true">
+                <span class="group-id">{{ui.alreadyOwnedByFriend}}</span>
+                <span id="share-peer-duplicate-count" class="exchange-section-count">0</span>
+                <span class="material-symbols-outlined share-chevron" data-exchange-section-chevron="share-peer-duplicate-list" aria-hidden="true">expand_less</span>
+              </button>
+              <div id="share-peer-duplicate-list" class="exchange-section-body"></div>
+            </section>
+          </div>
+          <p id="share-diff-row">{{ui.selectedDifference}}: <span id="share-count-diff">0</span></p>
+          </div>
+          <div class="share-fullscreen-actions">
+            <button class="icon" id="share-exchange-cancel">{{ui.cancel}}</button>
+            <button class="icon" id="share-exchange-apply">{{ui.exchangeAction}}</button>
+          </div>
+        </div>
+        <div id="share-exchange-sendback-screen" class="hidden share-fullscreen-handler" data-route-path="share/exchange-sendback" data-route-handler="handleExchangeSendback" data-route-lock="true">
+          <div class="share-fullscreen-content">
+          <h3>{{ui.exchangeShareBackTitle}}</h3>
+          <p>{{ui.exchangeShareBackDescription}}</p>
+          <section class="share-text-block">
+            <label for="share-exchanged-taken-text">{{ui.exchangedTaken}}</label>
+            <textarea id="share-exchanged-taken-text" class="share-textarea" readonly></textarea>
+            <div class="share-actions-list">
+              <button class="icon" id="share-exchanged-taken-sms"><span class="material-symbols-outlined" aria-hidden="true">sms</span><span>{{ui.actionSms}}</span></button>
+              <button class="icon" id="share-exchanged-taken-whatsapp"><img src="../../images/whatsapp.svg" alt="" aria-hidden="true" class="action-icon-svg" /><span>{{ui.actionWhatsapp}}</span></button>
+              <button class="icon" id="share-exchanged-taken-clipboard"><span class="material-symbols-outlined" aria-hidden="true">content_copy</span><span>{{ui.actionCopy}}</span></button>
+            </div>
+          </section>
+          <section class="share-text-block">
+            <label for="share-exchanged-given-text">{{ui.exchangedGiven}}</label>
+            <textarea id="share-exchanged-given-text" class="share-textarea" readonly></textarea>
+            <div class="share-actions-list">
+              <button class="icon" id="share-exchanged-given-sms"><span class="material-symbols-outlined" aria-hidden="true">sms</span><span>{{ui.actionSms}}</span></button>
+              <button class="icon" id="share-exchanged-given-whatsapp"><img src="../../images/whatsapp.svg" alt="" aria-hidden="true" class="action-icon-svg" /><span>{{ui.actionWhatsapp}}</span></button>
+              <button class="icon" id="share-exchanged-given-clipboard"><span class="material-symbols-outlined" aria-hidden="true">content_copy</span><span>{{ui.actionCopy}}</span></button>
+            </div>
+          </section>
+          </div>
+          <div class="share-fullscreen-actions">
+            <button class="icon" id="share-exchanged-sendback-close">{{ui.dismiss}}</button>
+          </div>
+        </div>
+        <div id="share-text-exchange-screen" class="hidden share-fullscreen-handler" data-route-path="share/text-exchange" data-route-handler="handleShareTextExchange" data-route-lock="true">
+          <div class="share-fullscreen-content">
+            <h3>{{ui.shareTextTitle}}</h3>
+            <p>{{ui.shareTextFullscreenHint}}</p>
+            <section class="share-text-block">
+              <label for="share-text-need">{{ui.whatINeed}}</label>
+              <textarea id="share-text-need" class="share-textarea" readonly></textarea>
+              <div class="share-actions-list">
+                <button class="icon" id="share-text-need-sms"><span class="material-symbols-outlined" aria-hidden="true">sms</span><span>{{ui.actionSms}}</span></button>
+                <button class="icon" id="share-text-need-whatsapp"><img src="../../images/whatsapp.svg" alt="" aria-hidden="true" class="action-icon-svg" /><span>{{ui.actionWhatsapp}}</span></button>
+                <button class="icon" id="share-text-need-clipboard"><span class="material-symbols-outlined" aria-hidden="true">content_copy</span><span>{{ui.actionCopy}}</span></button>
+              </div>
+            </section>
+            <section class="share-text-block">
+              <label for="share-text-duplicates">{{ui.duplicatesIHave}}</label>
+              <textarea id="share-text-duplicates" class="share-textarea" readonly></textarea>
+              <div class="share-actions-list">
+                <button class="icon" id="share-text-duplicates-sms"><span class="material-symbols-outlined" aria-hidden="true">sms</span><span>{{ui.actionSms}}</span></button>
+                <button class="icon" id="share-text-duplicates-whatsapp"><img src="../../images/whatsapp.svg" alt="" aria-hidden="true" class="action-icon-svg" /><span>{{ui.actionWhatsapp}}</span></button>
+                <button class="icon" id="share-text-duplicates-clipboard"><span class="material-symbols-outlined" aria-hidden="true">content_copy</span><span>{{ui.actionCopy}}</span></button>
+              </div>
+            </section>
+          </div>
+          <div class="share-fullscreen-actions">
+            <button class="icon" id="share-text-exchange-close">{{ui.dismiss}}</button>
+          </div>
+        </div>
+        <div id="share-text-paste-screen" class="hidden share-fullscreen-handler" data-route-path="share/text-paste" data-route-handler="handleShareTextPaste" data-route-lock="true">
+          <div class="share-fullscreen-content">
+            <h3>{{ui.shareTextPasteTitle}}</h3>
+            <p>{{ui.shareTextPasteHint}}</p>
+            <section class="share-text-block">
+              <label for="share-text-paste-need">{{ui.whatPeerNeeds}}</label>
+              <textarea id="share-text-paste-need" class="share-textarea" placeholder="{{ui.textSharePastePlaceholder}}"></textarea>
+              <button class="icon" id="share-text-paste-need-clipboard"><span class="material-symbols-outlined" aria-hidden="true">content_paste</span><span>{{ui.actionPaste}}</span></button>
+            </section>
+            <section class="share-text-block">
+              <label for="share-text-paste-duplicates">{{ui.duplicatesPeerHas}}</label>
+              <textarea id="share-text-paste-duplicates" class="share-textarea" placeholder="{{ui.textSharePastePlaceholder}}"></textarea>
+              <button class="icon" id="share-text-paste-duplicates-clipboard"><span class="material-symbols-outlined" aria-hidden="true">content_paste</span><span>{{ui.actionPaste}}</span></button>
+            </section>
+          </div>
+          <div class="share-fullscreen-actions">
+            <button class="icon" id="share-text-paste-cancel">{{ui.cancel}}</button>
+            <button class="icon" id="share-text-paste-apply">{{ui.exchangeAction}}</button>
+          </div>
+        </div>
+        <div id="share-text-sendback-paste-screen" class="hidden share-fullscreen-handler" data-route-path="share/text-sendback-paste" data-route-handler="handleShareTextSendbackPaste" data-route-lock="true">
+          <div class="share-fullscreen-content">
+            <h3>{{ui.exchangeShareBackPasteTitle}}</h3>
+            <p>{{ui.exchangeShareBackPasteHint}}</p>
+            <section class="share-text-block">
+              <label for="share-text-paste-taken">{{ui.exchangedTaken}}</label>
+              <textarea id="share-text-paste-taken" class="share-textarea" placeholder="{{ui.textSharePastePlaceholder}}"></textarea>
+            </section>
+            <section class="share-text-block">
+              <label for="share-text-paste-given">{{ui.exchangedGiven}}</label>
+              <textarea id="share-text-paste-given" class="share-textarea" placeholder="{{ui.textSharePastePlaceholder}}"></textarea>
+            </section>
+          </div>
+          <div class="share-fullscreen-actions">
+            <button class="icon" id="share-text-sendback-paste-cancel">{{ui.cancel}}</button>
+            <button class="icon" id="share-text-sendback-paste-apply">{{ui.acceptExchangeAction}}</button>
+          </div>
+        </div>
+        <div id="share-exchanged-receive-screen" class="hidden share-fullscreen-handler" data-route-path="share/exchanged" data-route-handler="handleExchangedReceive" data-route-lock="true">
+          <div class="share-fullscreen-content">
+          <h3>{{ui.exchangedReviewTitle}}</h3>
+          <p>{{ui.sourceAlbumName}}: <span id="share-exchanged-source-name"></span></p>
+          <p>{{ui.exchangedGiven}}: <span id="share-exchanged-taken-count">0</span></p>
+          <div id="share-exchanged-taken-list"></div>
+          <p>{{ui.exchangedTaken}}: <span id="share-exchanged-given-count">0</span></p>
+          <div id="share-exchanged-given-list"></div>
+          </div>
+          <div class="share-fullscreen-actions">
+            <button class="icon" id="share-exchanged-cancel">{{ui.cancel}}</button>
+            <button class="icon" id="share-exchanged-apply">{{ui.acceptExchangeAction}}</button>
+          </div>
+        </div>
+        <div id="share-qrcode-screen" class="hidden share-fullscreen-handler" data-route-path="share/qrcode" data-route-handler="handleShareQrCode" data-route-lock="false">
+          <div class="share-fullscreen-content share-qrcode-content">
+            <h3>{{ui.actionQrCode}}</h3>
+            <p>{{ui.shareQrCodeHint}}</p>
+            <div id="share-qrcode-content"></div>
+          </div>
+          <div class="share-fullscreen-actions">
+            <button class="icon" id="share-qrcode-dismiss">{{ui.dismiss}}</button>
+          </div>
+        </div>
+      </section>
+      <section id="tab-print" class="tab-pane hidden" data-route-path="print">
+        <article id="print-sheet">
+          <div class="print-table-frame">
+            <table class="print-table">
+              <tbody id="print-table"></tbody>
+            </table>
+          </div>
+          <header class="print-footer">
+            <div class="print-info">
+	      {{ui.printAlbumName}}: <span id="print-album-name"></span>,
+              {{ui.printGeneratedAt}}: <span id="print-generated-at"></span>
+	    </div>
+          </header>
+        </article>
+      </section>
+      <nav class="bottom">
+        <button data-tab="album">
+          <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+          <span>{{ui.tabAlbum}}</span>
+        </button>
+        <button data-tab="duplicates">
+          <span class="material-symbols-outlined" aria-hidden="true">difference</span>
+          <span>{{ui.tabDuplicates}}</span>
+        </button>
+        <button data-tab="search" data-tab-focus-element="quick-input">
+          <span class="material-symbols-outlined" aria-hidden="true">search</span>
+          <span>{{ui.tabSearch}}</span>
+        </button>
+        <button data-tab="share">
+          <span class="material-symbols-outlined" aria-hidden="true">share</span>
+          <span>{{ui.tabShare}}</span>
+        </button>
+        <button data-tab="config">
+          <span class="material-symbols-outlined" aria-hidden="true">settings</span>
+          <span>{{ui.tabConfig}}</span>
+        </button>
+      </nav>
+    </main>
+    <script type="module">{{{appJs}}}</script>
+  </body>
+</html>
