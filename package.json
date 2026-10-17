@@ -35,7 +35,7 @@
     "@vitest/coverage-v8": "^4.1.10",
     "ajv": "8.20.0",
     "esbuild": "0.28.2",
-    "handlebars": "4.7.9",
+    "handlebars": "4.7.10",
     "html-minifier-terser": "^7.2.0",
     "husky": "9.1.7",
     "jsdom": "^30.0.1",
